@@ -199,8 +199,8 @@
 		function canviaIdioma(idioma) {
 		  $.getJSON("languages/" + idioma + ".json", function(data) {
 			$("header h1").text(data.header.nom);
-			$("header h2").text(data.header.titol);
-			$("header h3").text(data.header.subtitol);
+			$("header p:eq(0)").text(data.header.titol);
+			$("header p:eq(1)").text("📧 " + data.contacte.email + " | 📞 " + data.contacte.telefon);
 
 			$("nav a[data-section='presentacio']").text(data.nav.presentacio);
 			$("nav a[data-section='projectes']").text(data.nav.projectes);
