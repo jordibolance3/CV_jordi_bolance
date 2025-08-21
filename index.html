@@ -198,6 +198,10 @@
 		
 		function canviaIdioma(idioma) {
 		  $.getJSON("languages/" + idioma + ".json", function(data) {
+			$("header h1").text(data.header.nom);
+			$("header h2").text(data.header.titol);
+			$("header h3").text(data.header.subtitol);
+
 			$("nav a[data-section='presentacio']").text(data.nav.presentacio);
 			$("nav a[data-section='projectes']").text(data.nav.projectes);
 			$("nav a[data-section='rendiment']").text(data.nav.rendiment);
@@ -208,11 +212,21 @@
 			$("nav a[data-section='certificats']").text(data.nav.certificats);
 			$("nav a[data-section='contacte']").text(data.nav.contacte);
 
+			$("#presentacio h2").text(data.h2.presentacio);
+			$("#projectes h2").text(data.h2.projectes);
+			$("#rendiment h2").text(data.h2.rendiment);
+			$("#habilitats h2").text(data.h2.habilitats);
+			$("#idiomes h2").text(data.h2.idiomes);
+			$("#experiencia h2").text(data.h2.experiencia);
+			$("#formacio h2").text(data.h2.formacio);
+			$("#certificats h2").text(data.h2.certificats);
+			$("#contacte h2").text(data.h2.contacte);
+
 			$("#presentacio p").text(data.presentacio);
 
 			let projectesHtml = "";
 			data.projectes.forEach(function(item){
-			  projectesHtml += "<li>" + item + "</li>";
+			  projectesHtml += "<li>" + item.titol + ": " + item.descripcio + "</li>";
 			});
 			$("#projectes ul").html(projectesHtml);
 
@@ -220,13 +234,13 @@
 
 			let habilitatsHtml = "";
 			data.habilitats.forEach(function(item){
-			  habilitatsHtml += "<li>" + item + "</li>";
+			  habilitatsHtml += "<li>" + item.titol + " (nivell: " + item.nivell + ")</li>";
 			});
 			$("#habilitats ul").html(habilitatsHtml);
 
 			let idiomesHtml = "";
 			data.idiomes.forEach(function(item){
-			  idiomesHtml += "<li>" + item + "</li>";
+			  idiomesHtml += "<li>" + item.nom + " (nivell: " + item.nivell + ")</li>";
 			});
 			$("#idiomes ul").html(idiomesHtml);
 
@@ -234,13 +248,13 @@
 
 			let formacioHtml = "";
 			data.formacio.forEach(function(item){
-			  formacioHtml += "<li>" + item + "</li>";
+			  formacioHtml += "<li>" + item.period + " - " + item.titol + " (" + item.centre + ")</li>";
 			});
 			$("#formacio ul").html(formacioHtml);
 
 			let certificatsHtml = "";
 			data.certificats.forEach(function(item){
-			  certificatsHtml += "<li>" + item + "</li>";
+			  certificatsHtml += "<li>" + item.data + " - " + item.titol + "</li>";
 			});
 			$("#certificats ul").html(certificatsHtml);
 
@@ -249,6 +263,7 @@
 			$("#contacte p:eq(2)").text("LinkedIn: " + data.contacte.linkedin);
 		  });
 		}
+
 
 		  $(".idiomes img").click(function() {
 			let alt = $(this).attr("alt");

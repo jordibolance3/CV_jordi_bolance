@@ -1,4 +1,9 @@
 {
+  "header": {
+    "nom": "Jordi Bolance",
+    "titol": "Estudiant d'Enginyeria Informàtica",
+    "subtitol": "Amb ganes de fer els meus primers passos a la indústria"
+  },
   "nav": {
     "presentacio": "Presentació",
     "projectes": "Projectes",
@@ -6,22 +11,33 @@
     "habilitats": "Competències",
     "idiomes": "Idiomes",
     "experiencia": "Experiència",
-    "formacio": "Educació",
+    "formacio": "Formació",
     "certificats": "Certificats",
     "contacte": "Contacte"
   },
-  "presentacio": "Sóc estudiant de tercer curs d'Enginyeria Informàtica amb moltes ganes de fer els meus primers passos a la indústria. Amb una actitud oberta, estic enfocat a aprendre, assolir objectius i aportar les meves habilitats per donar suport a equips i ajudar les empreses a créixer.",
+  "h2": {
+    "presentacio": "Sobre mi",
+    "projectes": "Projectes Personals",
+    "rendiment": "Rendiment Acadèmic",
+    "habilitats": "Habilitats i Competències",
+    "idiomes": "Idiomes",
+    "experiencia": "Experiència Professional",
+    "formacio": "Formació",
+    "certificats": "Certificats",
+    "contacte": "Informació de Contacte"
+  },
+  "presentacio": "Sóc estudiant de tercer curs d'Enginyeria Informàtica amb moltes ganes de fer els meus primers passos a la indústria. Amb una actitud oberta, estic enfocat a aprendre, assolir objectius i aportar les meves habilitats per donar suport als equips i ajudar les empreses a créixer.",
   "projectes": [
     {
       "titol": "Contribució a la modificació de jocs",
-      "descripcio": "He modificat de manera independent un joc per millorar algunes mecàniques, impulsat per la meva curiositat i desig d'experimentar amb el desenvolupament de jocs."
+      "descripcio": "He modificat de manera independent un joc per millorar algunes mecàniques, impulsat per la curiositat i el desig d'experimentar amb el desenvolupament de jocs."
     },
     {
       "titol": "Gestió de servidor de jocs online",
-      "descripcio": "He creat i gestionat un servidor de jocs online per als meus amics, aprenent aspectes tècnics com la configuració del servidor i modificacions de joc, així com aspectes creatius com l'organització d'esdeveniments i la gestió d'interaccions i conflictes entre jugadors."
+      "descripcio": "He creat i gestionat un servidor de jocs online per als meus amics, aprenent aspectes tècnics com la configuració del servidor i les modificacions del joc, així com aspectes creatius com l'organització d'esdeveniments i la gestió d'interaccions i conflictes entre jugadors."
     }
   ],
-  "rendiment": "Acadèmicament em considero un bon estudiant. Tot i que la meva nota mitjana és de 7,1, mai he hagut de repetir un examen i m'he sentit còmode amb totes les assignatures.",
+  "rendiment": "Acadèmicament em considero un bon estudiant. Tot i que la meva nota mitjana és de 7,1, mai no he hagut de repetir cap examen i m'he sentit còmode amb totes les assignatures.",
   "habilitats": [
     {"titol": "Capacitat d'aprenentatge", "nivell": 5},
     {"titol": "Treball en equip", "nivell": 5},
@@ -38,9 +54,9 @@
     {"nom": "Espanyol", "nivell": 5},
     {"nom": "Anglès", "nivell": 5}
   ],
-  "experiencia": "Tot i que encara no tinc experiència professional, aporto solidesa tècnica i compromís per aprendre i contribuir de manera efectiva dins d'un equip.",
+  "experiencia": "Encara que no tinc experiència professional, aporto solidesa tècnica i compromís per aprendre i contribuir de manera efectiva dins d'un equip.",
   "formacio": [
-    {"period": "2022-09 - actualitat", "titol": "Enginyeria, Enginyeria Informàtica", "centre": "Universitat de Girona, Girona", "descripcio": "Actualment cursant el tercer any d'estudis"},
+    {"period": "2022-09 - actualitat", "titol": "Enginyeria Informàtica", "centre": "Universitat de Girona, Girona", "descripcio": "Actualment cursant el tercer any d'estudis"},
     {"period": "2020-09 - 2022-05", "titol": "Batxillerat Tecnològic", "centre": "Institut Baix Montseny, Sant Celoni"}
   ],
   "certificats": [

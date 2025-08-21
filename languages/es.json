@@ -1,4 +1,9 @@
 {
+  "header": {
+    "nom": "Jordi Bolance",
+    "titol": "Estudiante de Ingeniería Informática",
+    "subtitol": "Deseando dar mis primeros pasos en la industria"
+  },
   "nav": {
     "presentacio": "Presentación",
     "projectes": "Proyectos",
@@ -10,6 +15,17 @@
     "certificats": "Certificados",
     "contacte": "Contacto"
   },
+  "h2": {
+    "presentacio": "Sobre mí",
+    "projectes": "Proyectos Personales",
+    "rendiment": "Rendimiento Académico",
+    "habilitats": "Habilidades y Competencias",
+    "idiomes": "Idiomas",
+    "experiencia": "Experiencia Profesional",
+    "formacio": "Educación",
+    "certificats": "Certificados",
+    "contacte": "Información de Contacto"
+  },
   "presentacio": "Soy estudiante de tercer curso de Ingeniería Informática con muchas ganas de dar mis primeros pasos en la industria. Con una actitud abierta, estoy enfocado en aprender, alcanzar objetivos y aportar mis habilidades para apoyar a los equipos y ayudar a las empresas a crecer.",
   "projectes": [
     {
@@ -18,7 +34,7 @@
     },
     {
       "titol": "Gestión de servidor de juegos online",
-      "descripcio": "He creado y gestionado un servidor de juegos online para mis amigos, aprendiendo aspectos técnicos como la configuración del servidor y modificaciones de juego, así como aspectos creativos como la organización de eventos y la gestión de interacciones y conflictos entre jugadores."
+      "descripcio": "He creado y gestionado un servidor de juegos online para mis amigos, aprendiendo aspectos técnicos como la configuración del servidor y modificaciones del juego, así como aspectos creativos como la organización de eventos y la gestión de interacciones y conflictos entre jugadores."
     }
   ],
   "rendiment": "Académicamente me considero un buen estudiante. Aunque mi nota media es de 7,1, nunca he tenido que repetir un examen y me he sentido cómodo con todas las asignaturas.",
@@ -38,9 +54,9 @@
     {"nom": "Español", "nivell": 5},
     {"nom": "Inglés", "nivell": 5}
   ],
-  "experiencia": "Aunque aún no tengo experiencia profesional, aporto solidez técnica y compromiso para aprender y contribuir de manera efectiva dentro de un equipo.",
+  "experiencia": "Aunque todavía no tengo experiencia profesional, aporto solidez técnica y compromiso para aprender y contribuir de manera efectiva dentro de un equipo.",
   "formacio": [
-    {"period": "2022-09 - actualidad", "titol": "Ingeniería, Ingeniería Informática", "centre": "Universidad de Girona, Girona", "descripcio": "Actualmente cursando el tercer año de estudios"},
+    {"period": "2022-09 - actualidad", "titol": "Ingeniería Informática", "centre": "Universidad de Girona, Girona", "descripcio": "Actualmente cursando el tercer año de estudios"},
     {"period": "2020-09 - 2022-05", "titol": "Bachillerato Tecnológico", "centre": "Institut Baix Montseny, Sant Celoni"}
   ],
   "certificats": [

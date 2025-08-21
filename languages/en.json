@@ -1,6 +1,11 @@
 {
+  "header": {
+    "nom": "Jordi Bolance",
+    "titol": "Computer Engineering Student",
+    "subtitol": "Aspiring to make my first steps in the industry"
+  },
   "nav": {
-    "presentacio": "Introduction",
+    "presentacio": "Presentation",
     "projectes": "Projects",
     "rendiment": "Performance",
     "habilitats": "Skills",
@@ -10,15 +15,26 @@
     "certificats": "Certificates",
     "contacte": "Contact"
   },
-  "presentacio": "I am a third-year Computer Engineering student eager to take my first steps in the industry. With an open attitude, I focus on learning, achieving goals, and applying my skills to support teams and help companies grow.",
+  "h2": {
+    "presentacio": "About me",
+    "projectes": "Personal Projects",
+    "rendiment": "Academic Performance",
+    "habilitats": "Skills & Competences",
+    "idiomes": "Languages",
+    "experiencia": "Professional Experience",
+    "formacio": "Education",
+    "certificats": "Certificates",
+    "contacte": "Contact Information"
+  },
+  "presentacio": "I am a third-year Computer Engineering student eager to take my first steps in the industry. With an open attitude, I am focused on learning, achieving goals, and leveraging my skills to support teams and help companies grow.",
   "projectes": [
     {
-      "titol": "Contribution to Game Modifications",
-      "descripcio": "I independently modified a game to improve certain mechanics, driven by curiosity and a desire to experiment with game development."
+      "titol": "Game Modification Contribution",
+      "descripcio": "I independently modified a game to improve some mechanics, driven by curiosity and a desire to experiment with game development."
     },
     {
       "titol": "Online Game Server Management",
-      "descripcio": "I created and managed an online game server for my friends, learning technical aspects like server configuration and game modifications, as well as creative aspects like organizing events and managing player interactions and conflicts."
+      "descripcio": "I created and managed an online game server for my friends, learning technical aspects like server configuration and game modifications, as well as creative aspects such as organizing events and managing interactions and conflicts between players."
     }
   ],
   "rendiment": "Academically, I consider myself a good student. Although my average grade is 7.1, I have never had to retake an exam and have felt comfortable with all subjects.",
@@ -38,13 +54,13 @@
     {"nom": "Spanish", "nivell": 5},
     {"nom": "English", "nivell": 5}
   ],
-  "experiencia": "Although I don't have professional experience yet, I bring technical solidity and commitment to learn and contribute effectively within a team.",
+  "experiencia": "Although I do not have professional experience yet, I bring technical solidity and commitment to learn and contribute effectively within a team.",
   "formacio": [
-    {"period": "2022-09 - present", "titol": "Engineering, Computer Engineering", "centre": "University of Girona, Girona", "descripcio": "Currently in the third year of studies"},
+    {"period": "2022-09 - present", "titol": "Computer Engineering", "centre": "University of Girona, Girona", "descripcio": "Currently in my third year of studies"},
     {"period": "2020-09 - 2022-05", "titol": "Technological Baccalaureate", "centre": "Institut Baix Montseny, Sant Celoni"}
   ],
   "certificats": [
-    {"data": "2024-02", "titol": "Driver's License"},
+    {"data": "2024-02", "titol": "Driving License"},
     {"data": "2020-06", "titol": "First Certificate in English"}
   ],
   "contacte": {
