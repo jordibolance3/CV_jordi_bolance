@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículum Jordi Bolance</title>
+  
+  <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f7f9fb;
+      color: #333;
+    }
+    header {
+      background: #005f99;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+	header img.foto {
+	  width: 120px;       
+	  height: 120px;
+	  border-radius: 50%; 
+	  border: 3px solid white;
+	  margin-bottom: 1rem;
+	}
+	.idiomes {
+	  position: absolute;
+	  top: 10px;
+	  right: 20px;
+	}
+
+	.idiomes img {
+	  width: 35px;         
+	  height: 35px;        
+	  object-fit: cover;   
+	  margin-left: 10px;
+	  cursor: pointer;
+	  transition: transform 0.2s; 
+	}
+	  
+	.catala {
+	  width: 30px !important;         
+	  height: 30px !important;        
+	  object-fit: cover;   
+	  margin-left: 10px;
+	  cursor: pointer;
+	  transition: transform 0.2s;
+	  position: relative;
+	  top: -3px !important;
+	  right: -2px !important;
+	}
+
+	.idiomes img:hover {
+	  transform: scale(1.2);
+	}
+	  
+    h1 { margin: 0; }
+    nav {
+      background: #eee;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #005f99;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: none; 
+    }
+  </style>
+</head>
+<body>
+  
+	
+  <header>
+	<div class="idiomes">
+		<a href="#" title="English"><img src="images/uk.png" alt="English"></a>
+		<a href="#" title="Español"><img src="images/es.png" alt="Español"></a>
+		<a href="#" title="Català"><img src="images/cat.png" alt="Català" class="catala"></a>
+	 </div>
+	  
+	<img src="images/fotoid.jpg" alt="Foto de Jordi Bolance" class="foto">
+    <h1>Jordi Bolance</h1>
+    <p>Estudiant d'Enginyeria Informàtica</p>
+  </header>
+
+  <nav>
+    <a data-section="presentacio">Presentació</a>
+    <a data-section="experiencia">Experiència</a>
+    <a data-section="formacio">Formació</a>
+    <a data-section="habilitats">Habilitats</a>
+    <a data-section="contacte">Contacte</a>
+  </nav>
+
+  <section id="presentacio">
+    <h2>Sobre mi</h2>
+    <p>Sóc estudiant d'enginyeria informàtica amb experiència en desenvolupament web utilitzant PHP, JavaScript, jQuery i jQuery UI.</p>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiència</h2>
+    <ul>
+      <li>Pràctiques de desenvolupament web: aplicacions amb PHP i MySQL.</li>
+      <li>Projectes amb JavaScript + jQuery per fer interfícies interactives.</li>
+    </ul>
+  </section>
+
+  <section id="formacio">
+    <h2>Formació</h2>
+    <p>Grau en Enginyeria Informàtica - Universitat XYZ (en curs)</p>
+  </section>
+
+  <section id="habilitats">
+    <h2>Habilitats tècniques</h2>
+    <p>PHP, JavaScript, jQuery, jQuery UI, HTML5, CSS3</p>
+  </section>
+
+  <section id="contacte">
+    <h2>Contacte</h2>
+    <p>Email: jordi@example.com</p>
+    <p>LinkedIn: linkedin.com/in/jordibolance</p>
+  </section>
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script>
+
+  <script>
+    $(document).ready(function() {
+		  $("#presentacio").show();
+
+		  $("nav a").click(function() {
+			let sectionId = $(this).data("section");
+			$("section:visible").hide("fade", 400, function() {
+			  $("#" + sectionId).show("fade", 400);
+			});
+		  });
+		
+		function canviaIdioma(idioma) {
+			$.getJSON("languages/" + idioma + ".json", function(data) {
+			  $("#presentacio p").text(data.presentacio);
+			  let experienciaHtml = "";
+			  data.experiencia.forEach(function(item){ experienciaHtml += "<li>" + item + "</li>"; });
+			  $("#experiencia ul").html(experienciaHtml);
+			  $("#formacio p").text(data.formacio);
+			  $("#habilitats p").text(data.habilitats);
+			  $("#contacte p:eq(0)").text("Email: " + data.contacte.email);
+			  $("#contacte p:eq(1)").text("LinkedIn: " + data.contacte.linkedin);
+			});
+		  }
+
+		  $(".idiomes img").click(function() {
+			 
+			let alt = $(this).attr("alt");
+			if (alt === "English") canviaIdioma("en");
+			else if (alt === "Español") canviaIdioma("es");
+			else if (alt === "Català") canviaIdioma("cat");
+		  });
+    });
+  </script>
+</body>
+</html>

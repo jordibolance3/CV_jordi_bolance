@@ -1,0 +1,13 @@
+{
+  "presentacio": "I am a computer engineering student with experience in web development using PHP, JavaScript, jQuery and jQuery UI.",
+  "experiencia": [
+    "Web development internship: applications with PHP and MySQL.",
+    "Projects with JavaScript + jQuery for interactive interfaces."
+  ],
+  "formacio": "Bachelor in Computer Engineering - XYZ University (ongoing)",
+  "habilitats": "PHP, JavaScript, jQuery, jQuery UI, HTML5, CSS3",
+  "contacte": {
+    "email": "jordi@example.com",
+    "linkedin": "linkedin.com/in/jordibolance"
+  }
+}

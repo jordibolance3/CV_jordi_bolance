@@ -1,0 +1,13 @@
+{
+  "presentacio": "Sóc estudiant d'enginyeria informàtica amb experiència en desenvolupament web utilitzant PHP, JavaScript, jQuery i jQuery UI.",
+  "experiencia": [
+    "Pràctiques de desenvolupament web: aplicacions amb PHP i MySQL.",
+    "Projectes amb JavaScript + jQuery per fer interfícies interactives."
+  ],
+  "formacio": "Grau en Enginyeria Informàtica - Universitat XYZ (en curs)",
+  "habilitats": "PHP, JavaScript, jQuery, jQuery UI, HTML5, CSS3",
+  "contacte": {
+    "email": "jordi@example.com",
+    "linkedin": "linkedin.com/in/jordibolance"
+  }
+}
