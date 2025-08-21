@@ -1,15 +1,55 @@
-
 {
-  "presentacio": "Soy estudiante de ingeniería informática con experiencia en desarrollo web utilizando PHP, JavaScript, jQuery y jQuery UI.",
-  "experiencia": [
-    "Prácticas de desarrollo web: aplicaciones con PHP y MySQL.",
-    "Proyectos con JavaScript + jQuery para crear interfaces interactivas."
+  "nav": {
+    "presentacio": "Presentación",
+    "projectes": "Proyectos",
+    "rendiment": "Rendimiento",
+    "habilitats": "Competencias",
+    "idiomes": "Idiomas",
+    "experiencia": "Experiencia",
+    "formacio": "Educación",
+    "certificats": "Certificados",
+    "contacte": "Contacto"
+  },
+  "presentacio": "Soy estudiante de tercer curso de Ingeniería Informática con muchas ganas de dar mis primeros pasos en la industria. Con una actitud abierta, estoy enfocado en aprender, alcanzar objetivos y aportar mis habilidades para apoyar a los equipos y ayudar a las empresas a crecer.",
+  "projectes": [
+    {
+      "titol": "Contribución a la modificación de juegos",
+      "descripcio": "He modificado de manera independiente un juego para mejorar algunas mecánicas, impulsado por mi curiosidad y deseo de experimentar con el desarrollo de juegos."
+    },
+    {
+      "titol": "Gestión de servidor de juegos online",
+      "descripcio": "He creado y gestionado un servidor de juegos online para mis amigos, aprendiendo aspectos técnicos como la configuración del servidor y modificaciones de juego, así como aspectos creativos como la organización de eventos y la gestión de interacciones y conflictos entre jugadores."
+    }
   ],
-  "formacio": "Grado en Ingeniería Informática - Universidad XYZ (en curso)",
-  "habilitats": "PHP, JavaScript, jQuery, jQuery UI, HTML5, CSS3",
+  "rendiment": "Académicamente me considero un buen estudiante. Aunque mi nota media es de 7,1, nunca he tenido que repetir un examen y me he sentido cómodo con todas las asignaturas.",
+  "habilitats": [
+    {"titol": "Capacidad de aprendizaje", "nivell": 5},
+    {"titol": "Trabajo en equipo", "nivell": 5},
+    {"titol": "Habilidades de comunicación", "nivell": 4.5},
+    {"titol": "Diligencia y compromiso", "nivell": 5},
+    {"titol": "Mentalidad analítica", "nivell": 5},
+    {"titol": "Programación estructurada", "nivell": 5},
+    {"titol": "Dominio de Java", "nivell": 5},
+    {"titol": "Creación de modelos de datos", "nivell": 5},
+    {"titol": "Inteligencia emocional", "nivell": 5}
+  ],
+  "idiomes": [
+    {"nom": "Catalán", "nivell": 5},
+    {"nom": "Español", "nivell": 5},
+    {"nom": "Inglés", "nivell": 5}
+  ],
+  "experiencia": "Aunque aún no tengo experiencia profesional, aporto solidez técnica y compromiso para aprender y contribuir de manera efectiva dentro de un equipo.",
+  "formacio": [
+    {"period": "2022-09 - actualidad", "titol": "Ingeniería, Ingeniería Informática", "centre": "Universidad de Girona, Girona", "descripcio": "Actualmente cursando el tercer año de estudios"},
+    {"period": "2020-09 - 2022-05", "titol": "Bachillerato Tecnológico", "centre": "Institut Baix Montseny, Sant Celoni"}
+  ],
+  "certificats": [
+    {"data": "2024-02", "titol": "Permiso de conducir"},
+    {"data": "2020-06", "titol": "First Certificate in English"}
+  ],
   "contacte": {
-    "email": "jordi@example.com",
+    "email": "u1988989@campus.udg.edu",
+    "telefon": "644761615",
     "linkedin": "linkedin.com/in/jordibolance"
   }
 }
-
