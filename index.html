@@ -18,6 +18,7 @@
       color: white;
       padding: 2rem;
       text-align: center;
+      position: relative;
     }
 	header img.foto {
 	  width: 120px;       
@@ -31,7 +32,6 @@
 	  top: 10px;
 	  right: 20px;
 	}
-
 	.idiomes img {
 	  width: 35px;         
 	  height: 35px;        
@@ -39,8 +39,7 @@
 	  margin-left: 10px;
 	  cursor: pointer;
 	  transition: transform 0.2s; 
-	}
-	  
+	}  
 	.catala {
 	  width: 30px !important;         
 	  height: 30px !important;        
@@ -52,11 +51,9 @@
 	  top: -3px !important;
 	  right: -2px !important;
 	}
-
 	.idiomes img:hover {
 	  transform: scale(1.2);
 	}
-	  
     h1 { margin: 0; }
     nav {
       background: #eee;
@@ -79,57 +76,109 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       display: none; 
     }
+    .skills-list, .languages-list, .certificates-list, .projects-list, .education-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .skills-list li, .languages-list li, .certificates-list li, .projects-list li, .education-list li {
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
   
-	
   <header>
-	<div class="idiomes">
-		<a href="#" title="English"><img src="images/uk.png" alt="English"></a>
-		<a href="#" title="Español"><img src="images/es.png" alt="Español"></a>
-		<a href="#" title="Català"><img src="images/cat.png" alt="Català" class="catala"></a>
-	 </div>
+    <div class="idiomes">
+      <a href="#" title="English"><img src="images/uk.png" alt="English"></a>
+      <a href="#" title="Español"><img src="images/es.png" alt="Español"></a>
+      <a href="#" title="Català"><img src="images/cat.png" alt="Català" class="catala"></a>
+    </div>
 	  
-	<img src="images/fotoid.jpg" alt="Foto de Jordi Bolance" class="foto">
-    <h1>Jordi Bolance</h1>
+    <img src="images/fotoid.jpg" alt="Foto de Jordi Bolance" class="foto">
+    <h1>Jordi Bolance Navarro</h1>
     <p>Estudiant d'Enginyeria Informàtica</p>
+    <p>📧 u1988989@campus.udg.edu | 📞 644761615</p>
   </header>
 
   <nav>
     <a data-section="presentacio">Presentació</a>
-    <a data-section="experiencia">Experiència</a>
-    <a data-section="formacio">FormacióAAAAAAA</a>
+    <a data-section="projectes">Projectes</a>
+    <a data-section="rendiment">Rendiment Acadèmic</a>
     <a data-section="habilitats">Habilitats</a>
+    <a data-section="idiomes">Idiomes</a>
+    <a data-section="experiencia">Experiència Laboral</a>
+    <a data-section="formacio">Educació</a>
+    <a data-section="certificats">Certificats</a>
     <a data-section="contacte">Contacte</a>
   </nav>
 
   <section id="presentacio">
     <h2>Sobre mi</h2>
-    <p>Sóc estudiant d'enginyeria informàtica amb experiència en desenvolupament web utilitzant PHP, JavaScript, jQuery i jQuery UI.</p>
+    <p>Sóc estudiant de tercer curs d'enginyeria informàtica amb ganes de fer els primers passos a la indústria. Amb una ment oberta, em centro en aprendre, assolir objectius i aportar les meves habilitats per ajudar els equips i fer créixer les empreses.</p>
   </section>
 
-  <section id="experiencia">
-    <h2>Experiència</h2>
-    <ul>
-      <li>Pràctiques de desenvolupament web: aplicacions amb PHP i MySQL.</li>
-      <li>Projectes amb JavaScript + jQuery per fer interfícies interactives.</li>
+  <section id="projectes">
+    <h2>Projectes Personals</h2>
+    <ul class="projects-list">
+      <li><strong>Modificació de videojocs:</strong> He modificat un joc de manera independent per millorar algunes mecàniques, motivat per la meva curiositat i ganes d’experimentar amb el desenvolupament de jocs.</li>
+      <li><strong>Gestió de servidor de jocs online:</strong> He creat i gestionat un servidor de jocs per als meus amics, aprenent tant aspectes tècnics (configuració del servidor, modificacions del joc i gestió de comandes) com creatius (organització d’esdeveniments i competicions, gestió d’interaccions amb jugadors, conflictes i feedback).</li>
     </ul>
   </section>
 
-  <section id="formacio">
-    <h2>Formació</h2>
-    <p>Grau en Enginyeria Informàtica - Universitat XYZ (en curs)</p>
+  <section id="rendiment">
+    <h2>Rendiment Acadèmic</h2>
+    <p>Acadèmicament, em considero un estudiant fort. Tot i que la meva nota mitjana és de 7.1, mai no he hagut de tornar a fer un examen i sempre m’he sentit còmode amb tot el temari.</p>
   </section>
 
   <section id="habilitats">
-    <h2>Habilitats tècniques</h2>
-    <p>PHP, JavaScript, jQuery, jQuery UI, HTML5, CSS3</p>
+    <h2>Habilitats</h2>
+    <ul class="skills-list">
+      <li>Capacitat d'aprenentatge: ★★★★★</li>
+      <li>Treball en equip: ★★★★★</li>
+      <li>Habilitats de comunicació: ★★★★☆</li>
+      <li>Diligència i compromís: ★★★★★</li>
+      <li>Mentalitat analítica: ★★★★★</li>
+      <li>Programació estructurada: ★★★★★</li>
+      <li>Coneixements en Java: ★★★★★</li>
+      <li>Creació de models de dades: ★★★★★</li>
+      <li>Intel·ligència emocional: ★★★★★</li>
+    </ul>
+  </section>
+
+  <section id="idiomes">
+    <h2>Idiomes</h2>
+    <ul class="languages-list">
+      <li>Català: ★★★★★</li>
+      <li>Espanyol: ★★★★★</li>
+      <li>Anglès: ★★★★★</li>
+    </ul>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiència Laboral</h2>
+    <p>Encara no tinc experiència professional, però aporto habilitats sòlides i compromís per aprendre i contribuir de manera efectiva en un entorn d’equip.</p>
+  </section>
+
+  <section id="formacio">
+    <h2>Educació</h2>
+    <ul class="education-list">
+      <li>2022-09 - actual: Enginyeria Informàtica, Universitat de Girona, Girona (Tercer curs en curs)</li>
+      <li>2020-09 - 2022-05: Batxillerat Tecnològic, Institut Baix Montseny, Sant Celoni</li>
+    </ul>
+  </section>
+
+  <section id="certificats">
+    <h2>Certificats</h2>
+    <ul class="certificates-list">
+      <li>2024-02: Permís de conduir</li>
+      <li>2020-06: First Certificate in English</li>
+    </ul>
   </section>
 
   <section id="contacte">
     <h2>Contacte</h2>
-    <p>Email: jordi@example.com</p>
+    <p>Email: u1988989@campus.udg.edu</p>
+    <p>Telèfon: 644761615</p>
     <p>LinkedIn: linkedin.com/in/jordibolance</p>
   </section>
 
@@ -150,29 +199,58 @@
 		function canviaIdioma(idioma) {
 		  $.getJSON("languages/" + idioma + ".json", function(data) {
 			$("nav a[data-section='presentacio']").text(data.nav.presentacio);
+			$("nav a[data-section='projectes']").text(data.nav.projectes);
+			$("nav a[data-section='rendiment']").text(data.nav.rendiment);
+			$("nav a[data-section='habilitats']").text(data.nav.habilitats);
+			$("nav a[data-section='idiomes']").text(data.nav.idiomes);
 			$("nav a[data-section='experiencia']").text(data.nav.experiencia);
 			$("nav a[data-section='formacio']").text(data.nav.formacio);
-			$("nav a[data-section='habilitats']").text(data.nav.habilitats);
+			$("nav a[data-section='certificats']").text(data.nav.certificats);
 			$("nav a[data-section='contacte']").text(data.nav.contacte);
 
 			$("#presentacio p").text(data.presentacio);
 
-			let experienciaHtml = "";
-			data.experiencia.forEach(function(item){
-			  experienciaHtml += "<li>" + item + "</li>";
+			let projectesHtml = "";
+			data.projectes.forEach(function(item){
+			  projectesHtml += "<li>" + item + "</li>";
 			});
-			$("#experiencia ul").html(experienciaHtml);
+			$("#projectes ul").html(projectesHtml);
 
-			$("#formacio p").text(data.formacio);
-			$("#habilitats p").text(data.habilitats);
+			$("#rendiment p").text(data.rendiment);
+
+			let habilitatsHtml = "";
+			data.habilitats.forEach(function(item){
+			  habilitatsHtml += "<li>" + item + "</li>";
+			});
+			$("#habilitats ul").html(habilitatsHtml);
+
+			let idiomesHtml = "";
+			data.idiomes.forEach(function(item){
+			  idiomesHtml += "<li>" + item + "</li>";
+			});
+			$("#idiomes ul").html(idiomesHtml);
+
+			$("#experiencia p").text(data.experiencia);
+
+			let formacioHtml = "";
+			data.formacio.forEach(function(item){
+			  formacioHtml += "<li>" + item + "</li>";
+			});
+			$("#formacio ul").html(formacioHtml);
+
+			let certificatsHtml = "";
+			data.certificats.forEach(function(item){
+			  certificatsHtml += "<li>" + item + "</li>";
+			});
+			$("#certificats ul").html(certificatsHtml);
+
 			$("#contacte p:eq(0)").text("Email: " + data.contacte.email);
-			$("#contacte p:eq(1)").text("LinkedIn: " + data.contacte.linkedin);
+			$("#contacte p:eq(1)").text("Telèfon: " + data.contacte.telefon);
+			$("#contacte p:eq(2)").text("LinkedIn: " + data.contacte.linkedin);
 		  });
 		}
 
-
 		  $(".idiomes img").click(function() {
-			 
 			let alt = $(this).attr("alt");
 			if (alt === "English") canviaIdioma("en");
 			else if (alt === "Español") canviaIdioma("es");

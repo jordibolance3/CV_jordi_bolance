@@ -1,21 +1,55 @@
 {
   "nav": {
     "presentacio": "Presentació",
+    "projectes": "Projectes",
+    "rendiment": "Rendiment",
+    "habilitats": "Competències",
+    "idiomes": "Idiomes",
     "experiencia": "Experiència",
-    "formacio": "Formació",
-    "habilitats": "Habilitats",
+    "formacio": "Educació",
+    "certificats": "Certificats",
     "contacte": "Contacte"
   },
-  "presentacio": "Sóc estudiant d'enginyeria informàtica amb experiència en desenvolupament web utilitzant PHP, JavaScript, jQuery i jQuery UI.",
-  "experiencia": [
-    "Pràctiques de desenvolupament web: aplicacions amb PHP i MySQL.",
-    "Projectes amb JavaScript + jQuery per fer interfícies interactives."
+  "presentacio": "Sóc estudiant de tercer curs d'Enginyeria Informàtica amb moltes ganes de fer els meus primers passos a la indústria. Amb una actitud oberta, estic enfocat a aprendre, assolir objectius i aportar les meves habilitats per donar suport a equips i ajudar les empreses a créixer.",
+  "projectes": [
+    {
+      "titol": "Contribució a la modificació de jocs",
+      "descripcio": "He modificat de manera independent un joc per millorar algunes mecàniques, impulsat per la meva curiositat i desig d'experimentar amb el desenvolupament de jocs."
+    },
+    {
+      "titol": "Gestió de servidor de jocs online",
+      "descripcio": "He creat i gestionat un servidor de jocs online per als meus amics, aprenent aspectes tècnics com la configuració del servidor i modificacions de joc, així com aspectes creatius com l'organització d'esdeveniments i la gestió d'interaccions i conflictes entre jugadors."
+    }
   ],
-  "formacio": "Grau en Enginyeria Informàtica - Universitat XYZ (en curs)",
-  "habilitats": "PHP, JavaScript, jQuery, jQuery UI, HTML5, CSS3",
+  "rendiment": "Acadèmicament em considero un bon estudiant. Tot i que la meva nota mitjana és de 7,1, mai he hagut de repetir un examen i m'he sentit còmode amb totes les assignatures.",
+  "habilitats": [
+    {"titol": "Capacitat d'aprenentatge", "nivell": 5},
+    {"titol": "Treball en equip", "nivell": 5},
+    {"titol": "Habilitats de comunicació", "nivell": 4.5},
+    {"titol": "Diligència i compromís", "nivell": 5},
+    {"titol": "Mentalitat analítica", "nivell": 5},
+    {"titol": "Programació estructurada", "nivell": 5},
+    {"titol": "Domini de Java", "nivell": 5},
+    {"titol": "Creació de models de dades", "nivell": 5},
+    {"titol": "Intel·ligència emocional", "nivell": 5}
+  ],
+  "idiomes": [
+    {"nom": "Català", "nivell": 5},
+    {"nom": "Espanyol", "nivell": 5},
+    {"nom": "Anglès", "nivell": 5}
+  ],
+  "experiencia": "Tot i que encara no tinc experiència professional, aporto solidesa tècnica i compromís per aprendre i contribuir de manera efectiva dins d'un equip.",
+  "formacio": [
+    {"period": "2022-09 - actualitat", "titol": "Enginyeria, Enginyeria Informàtica", "centre": "Universitat de Girona, Girona", "descripcio": "Actualment cursant el tercer any d'estudis"},
+    {"period": "2020-09 - 2022-05", "titol": "Batxillerat Tecnològic", "centre": "Institut Baix Montseny, Sant Celoni"}
+  ],
+  "certificats": [
+    {"data": "2024-02", "titol": "Permís de conduir"},
+    {"data": "2020-06", "titol": "First Certificate in English"}
+  ],
   "contacte": {
-    "email": "jordi@example.com",
+    "email": "u1988989@campus.udg.edu",
+    "telefon": "644761615",
     "linkedin": "linkedin.com/in/jordibolance"
   }
 }
-
