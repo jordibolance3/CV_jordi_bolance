@@ -99,14 +99,14 @@
   <nav>
     <a data-section="presentacio">Presentació</a>
     <a data-section="experiencia">Experiència</a>
-    <a data-section="formacio">Formació</a>
+    <a data-section="formacio">FormacióAAAAAAA</a>
     <a data-section="habilitats">Habilitats</a>
     <a data-section="contacte">Contacte</a>
   </nav>
 
   <section id="presentacio">
     <h2>Sobre mi</h2>
-    <p>Sóc aaaaaaaa estudiant d'enginyeria informàtica amb experiència en desenvolupament web utilitzant PHP, JavaScript, jQuery i jQuery UI.</p>
+    <p>Sóc estudiant d'enginyeria informàtica amb experiència en desenvolupament web utilitzant PHP, JavaScript, jQuery i jQuery UI.</p>
   </section>
 
   <section id="experiencia">
@@ -148,17 +148,28 @@
 		  });
 		
 		function canviaIdioma(idioma) {
-			$.getJSON("languages/" + idioma + ".json", function(data) {
-			  $("#presentacio p").text(data.presentacio);
-			  let experienciaHtml = "";
-			  data.experiencia.forEach(function(item){ experienciaHtml += "<li>" + item + "</li>"; });
-			  $("#experiencia ul").html(experienciaHtml);
-			  $("#formacio p").text(data.formacio);
-			  $("#habilitats p").text(data.habilitats);
-			  $("#contacte p:eq(0)").text("Email: " + data.contacte.email);
-			  $("#contacte p:eq(1)").text("LinkedIn: " + data.contacte.linkedin);
+		  $.getJSON("languages/" + idioma + ".json", function(data) {
+			$("nav a[data-section='presentacio']").text(data.nav.presentacio);
+			$("nav a[data-section='experiencia']").text(data.nav.experiencia);
+			$("nav a[data-section='formacio']").text(data.nav.formacio);
+			$("nav a[data-section='habilitats']").text(data.nav.habilitats);
+			$("nav a[data-section='contacte']").text(data.nav.contacte);
+
+			$("#presentacio p").text(data.presentacio);
+
+			let experienciaHtml = "";
+			data.experiencia.forEach(function(item){
+			  experienciaHtml += "<li>" + item + "</li>";
 			});
-		  }
+			$("#experiencia ul").html(experienciaHtml);
+
+			$("#formacio p").text(data.formacio);
+			$("#habilitats p").text(data.habilitats);
+			$("#contacte p:eq(0)").text("Email: " + data.contacte.email);
+			$("#contacte p:eq(1)").text("LinkedIn: " + data.contacte.linkedin);
+		  });
+		}
+
 
 		  $(".idiomes img").click(function() {
 			 

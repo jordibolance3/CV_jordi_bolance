@@ -1,4 +1,11 @@
 {
+  "nav": {
+    "presentacio": "Presentació",
+    "experiencia": "Experiència",
+    "formacio": "Formació",
+    "habilitats": "Habilitats",
+    "contacte": "Contacte"
+  },
   "presentacio": "Sóc estudiant d'enginyeria informàtica amb experiència en desenvolupament web utilitzant PHP, JavaScript, jQuery i jQuery UI.",
   "experiencia": [
     "Pràctiques de desenvolupament web: aplicacions amb PHP i MySQL.",
