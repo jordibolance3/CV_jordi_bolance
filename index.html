@@ -27,6 +27,13 @@
 	  border: 3px solid white;
 	  margin-bottom: 1rem;
 	}
+  header a {
+    color: white;
+    font-weight: bold;
+  }
+  header a:hover {
+    color: #ffcc00;
+  }
 	.idiomes {
 	  position: absolute;
 	  top: 10px;
@@ -83,6 +90,12 @@
     .skills-list li, .languages-list li, .certificates-list li, .projects-list li, .education-list li {
       margin-bottom: 0.5rem;
     }
+    #projectes {
+      display: none;
+    }
+    nav a[data-section="projectes"] {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -97,7 +110,10 @@
     <img src="images/fotoid.jpg" alt="Foto de Jordi Bolance" class="foto">
     <h1>Jordi Bolance Navarro</h1>
     <p>Estudiant d'Enginyeria Informàtica</p>
-    <p>📧 u1988989@campus.udg.edu | 📞 644761615</p>
+    <p>
+      📧 <a href="mailto:jordi.bolance3@gmail.com">jordi.bolance3@gmail.com</a> |
+      📞 <a href="tel:+34644761615">+34 644 761 615</a>
+    </p>
   </header>
 
   <nav>
@@ -114,7 +130,12 @@
 
   <section id="presentacio">
     <h2>Sobre mi</h2>
-    <p>Sóc estudiant de tercer curs d'enginyeria informàtica amb ganes de fer els primers passos a la indústria. Amb una ment oberta, em centro en aprendre, assolir objectius i aportar les meves habilitats per ajudar els equips i fer créixer les empreses.</p>
+    <p>Sóc estudiant de quart curs d’Enginyeria Informàtica i ja he fet els primers passos dins la indústria,
+       amb dos mesos de pràctiques en una empresa tecnològica. Allà vaig tenir l’oportunitat de parlar directament amb clients, 
+      entendre les seves necessitats i transformar-les en propostes concretes d’implementació.</p>
+      <p>M’agrada aportar idees tant per a la millora de programes existents com per iniciar nous projectes des de zero, 
+        amb una actitud proactiva i orientada a resultats. Em considero una persona oberta i col·laborativa, 
+        amb ganes d’aprendre constantment i de contribuir al creixement dels equips i de les empreses en què participo.</p>
   </section>
 
   <section id="projectes">
@@ -127,59 +148,95 @@
 
   <section id="rendiment">
     <h2>Rendiment Acadèmic</h2>
-    <p>Acadèmicament, em considero un estudiant fort. Tot i que la meva nota mitjana és de 7.1, mai no he hagut de tornar a fer un examen i sempre m’he sentit còmode amb tot el temari.</p>
+    <p>Sóc un estudiant de quart curs d’Enginyeria Informàtica amb una nota mitjana de 7,3. 
+      He demostrat solidesa acadèmica amb dues matrícules d’honor a les assignatures Paradigmes i Llenguatges de Programació
+       i Informàtica Industrial i Robòtica, i un excel·lent a Sistemes Digitals.</p>
+    <p>Com a projecte destacat, juntament amb dos companys, 
+      vam ser els únics a completar amb èxit una tasca pràctica amb un robot Staubli programat amb VAL3, 
+      demostrant capacitat de treball en equip, resolució de problemes i aplicació pràctica dels coneixements teòrics.</p>
+    <p>Em considero un estudiant amb fortes competències analítiques i tècniques, 
+      capaç de superar reptes i aportar valor als equips i empreses en què participo.</p>
   </section>
 
   <section id="habilitats">
-    <h2>Habilitats</h2>
-    <ul class="skills-list">
-      <li>Capacitat d'aprenentatge: ★★★★★</li>
-      <li>Treball en equip: ★★★★★</li>
-      <li>Habilitats de comunicació: ★★★★☆</li>
-      <li>Diligència i compromís: ★★★★★</li>
-      <li>Mentalitat analítica: ★★★★★</li>
-      <li>Programació estructurada: ★★★★★</li>
-      <li>Coneixements en Java: ★★★★★</li>
-      <li>Creació de models de dades: ★★★★★</li>
-      <li>Intel·ligència emocional: ★★★★★</li>
-    </ul>
+      <h2>Habilitats</h2>
+
+      <h3>Competències personals</h3>
+      <ul class="skills-list">
+        <li>Capacitat d’aprenentatge: ★★★★★</li>
+        <li>Treball en equip: ★★★★★</li>
+        <li>Comunicació i contacte amb clients: ★★★★★</li>
+        <li>Intel·ligència emocional: ★★★★★</li>
+        <li>Diligència i compromís: ★★★★★</li>
+        <li>Resolució de problemes: ★★★★★</li>
+        <li>Teletreball: ★★★★★</li>
+        <li>Aportar noves solucions i idees: ★★★★★</li>
+      </ul>
+
+      <h3>Competències tècniques / Programació</h3>
+      <ul class="skills-list">
+        <li>Programació estructurada: ★★★★★</li>
+        <li>Java: ★★★★★</li>
+        <li>PHP: ★★★★★</li>
+        <li>Python: ★★★★☆</li>
+        <li>C / C++: ★★★★★</li>
+        <li>Haskell: ★★★★★</li>
+        <li>Prolog: ★★★★★</li>
+        <li>HTML / CSS: ★★★★☆</li>
+        <li>JavaScript: ★★★★☆</li>
+        <li>jQuery / jQuery UI / jQuery Mobile: ★★★★★</li>
+      </ul>
+
+      <h3>Bases de dades i documentació</h3>
+      <ul class="skills-list">
+        <li>Creació i gestió de models de dades: ★★★★★</li>
+        <li>MySQL: ★★★★★</li>
+        <li>Documentació de programes: ★★★★☆</li>
+      </ul>
   </section>
+
 
   <section id="idiomes">
     <h2>Idiomes</h2>
     <ul class="languages-list">
       <li>Català: ★★★★★</li>
       <li>Espanyol: ★★★★★</li>
-      <li>Anglès: ★★★★★</li>
+      <li>Anglès: ★★★★☆</li>
     </ul>
   </section>
 
   <section id="experiencia">
     <h2>Experiència Laboral</h2>
-    <p>Encara no tinc experiència professional, però aporto habilitats sòlides i compromís per aprendre i contribuir de manera efectiva en un entorn d’equip.</p>
+    <p>Del 01/06/2025 al 31/07/2025 vaig fer pràctiques de Software Engineer a SATB2C.</p>
+    <p>Vaig treballar resolent petits problemes i conflictes que s'anaven trobant els diferents clients, solucionant problemes de codi i de gestió de bases de dades.</p>
+    <p>Tenia contacte directe amb clients per resoldre problemes, escoltar i valorar proposicions per afegir al programa, interpretar-les i implementar-les segons les necessitats del client.</p>
+    <p>Vaig desenvolupar pàgines web utilitzant plantilles de WordPress i PrestaShop, gestionar altes i baixes d'usuaris, fer consultes a la base de dades de manera més òptima i actualitzar codi PHP a versions més recents.</p>
+    <p>Vaig treballar amb HTML, JavaScript, CSS i PHP per crear portals web i aplicacions.</p>
   </section>
+
 
   <section id="formacio">
     <h2>Educació</h2>
     <ul class="education-list">
-      <li>2022-09 - actual: Enginyeria Informàtica, Universitat de Girona, Girona (Tercer curs en curs)</li>
-      <li>2020-09 - 2022-05: Batxillerat Tecnològic, Institut Baix Montseny, Sant Celoni</li>
+      <li>2022-09 - actualitat - Enginyeria Informàtica (Universitat de Girona, Girona)</li>
+      <li>2020-09 - 2022-05 - Batxillerat Tecnològic (Institut Baix Montseny, Sant Celoni)</li>
     </ul>
   </section>
 
   <section id="certificats">
     <h2>Certificats</h2>
     <ul class="certificates-list">
-      <li>2024-02: Permís de conduir</li>
-      <li>2020-06: First Certificate in English</li>
+      <li>2020-06 - Certificat First d’Anglès</li>
+      <li>2024-02 - Permís de conduir</li>
+      <li>2025-08 - Certificat de finalització del curs "Todo jQuery de novato a experto" (Udemy)</li>
     </ul>
   </section>
 
   <section id="contacte">
     <h2>Contacte</h2>
-    <p>Email: u1988989@campus.udg.edu</p>
-    <p>Telèfon: 644761615</p>
-    <p>LinkedIn: linkedin.com/in/jordibolance</p>
+    <p>Email: <a href="mailto:jordi.bolance3@gmail.com">jordi.bolance3@gmail.com</a></p>
+    <p>Telèfon: <a href="tel:+34644761615">+34 644 761 615</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/jordi-bolance-navarro-55b95936a/" target="_blank">linkedin.com/in/jordi-bolance-navarro-55b95936a</a></p>
   </section>
 
   <script src="jquery.min.js"></script>
@@ -196,73 +253,100 @@
 			});
 		  });
 		
-		function canviaIdioma(idioma) {
-		  $.getJSON("languages/" + idioma + ".json", function(data) {
-			$("header h1").text(data.header.nom);
-			$("header p:eq(0)").text(data.header.titol);
-			$("header p:eq(1)").text("📧 " + data.contacte.email + " | 📞 " + data.contacte.telefon);
+		function generarEstrelles(nivell) {
+      const plena = "★".repeat(nivell);
+      const buida = "☆".repeat(5 - nivell);
+      return plena + buida;
+    }
 
-			$("nav a[data-section='presentacio']").text(data.nav.presentacio);
-			$("nav a[data-section='projectes']").text(data.nav.projectes);
-			$("nav a[data-section='rendiment']").text(data.nav.rendiment);
-			$("nav a[data-section='habilitats']").text(data.nav.habilitats);
-			$("nav a[data-section='idiomes']").text(data.nav.idiomes);
-			$("nav a[data-section='experiencia']").text(data.nav.experiencia);
-			$("nav a[data-section='formacio']").text(data.nav.formacio);
-			$("nav a[data-section='certificats']").text(data.nav.certificats);
-			$("nav a[data-section='contacte']").text(data.nav.contacte);
+    function canviaIdioma(idioma) {
+      $.getJSON("languages/" + idioma + ".json", function(data) {
+        $("header h1").text(data.header.nom);
+        $("header p:eq(0)").text(data.header.titol);
+        $("header p:eq(1)").html(
+          "📧 <a href='mailto:" + data.contacte.email + "'>" + data.contacte.email + "</a>" +
+          " | 📞 <a href='tel:" + data.contacte.telefon + "'>" + data.contacte.telefon + "</a>"
+        );
 
-			$("#presentacio h2").text(data.h2.presentacio);
-			$("#projectes h2").text(data.h2.projectes);
-			$("#rendiment h2").text(data.h2.rendiment);
-			$("#habilitats h2").text(data.h2.habilitats);
-			$("#idiomes h2").text(data.h2.idiomes);
-			$("#experiencia h2").text(data.h2.experiencia);
-			$("#formacio h2").text(data.h2.formacio);
-			$("#certificats h2").text(data.h2.certificats);
-			$("#contacte h2").text(data.h2.contacte);
+        $("nav a[data-section='presentacio']").text(data.nav.presentacio);
+        $("nav a[data-section='projectes']").text(data.nav.projectes);
+        $("nav a[data-section='rendiment']").text(data.nav.rendiment);
+        $("nav a[data-section='habilitats']").text(data.nav.habilitats);
+        $("nav a[data-section='idiomes']").text(data.nav.idiomes);
+        $("nav a[data-section='experiencia']").text(data.nav.experiencia);
+        $("nav a[data-section='formacio']").text(data.nav.formacio);
+        $("nav a[data-section='certificats']").text(data.nav.certificats);
+        $("nav a[data-section='contacte']").text(data.nav.contacte);
 
-			$("#presentacio p").text(data.presentacio);
+        $("#presentacio h2").text(data.h2.presentacio);
+        $("#projectes h2").text(data.h2.projectes);
+        $("#rendiment h2").text(data.h2.rendiment);
+        $("#habilitats h2").text(data.h2.habilitats);
+        $("#idiomes h2").text(data.h2.idiomes);
+        $("#experiencia h2").text(data.h2.experiencia);
+        $("#formacio h2").text(data.h2.formacio);
+        $("#certificats h2").text(data.h2.certificats);
+        $("#contacte h2").text(data.h2.contacte);
 
-			let projectesHtml = "";
-			data.projectes.forEach(function(item){
-			  projectesHtml += "<li>" + item.titol + ": " + item.descripcio + "</li>";
-			});
-			$("#projectes ul").html(projectesHtml);
+        $("#presentacio p").remove(); 
+        data.presentacio.forEach(paragraf => {
+          $("#presentacio").append(`<p>${paragraf}</p>`);
+        });
 
-			$("#rendiment p").text(data.rendiment);
+        let projectesHtml = "";
+        data.projectes.forEach(function(item){
+          projectesHtml += "<li>" + item.titol + ": " + item.descripcio + "</li>";
+        });
+        $("#projectes ul").html(projectesHtml);
 
-			let habilitatsHtml = "";
-			data.habilitats.forEach(function(item){
-			  habilitatsHtml += "<li>" + item.titol + " (nivell: " + item.nivell + ")</li>";
-			});
-			$("#habilitats ul").html(habilitatsHtml);
+        $("#rendiment p").remove(); 
+        data.rendiment.forEach(paragraf => {
+          $("#rendiment").append(`<p>${paragraf}</p>`);
+        });
 
-			let idiomesHtml = "";
-			data.idiomes.forEach(function(item){
-			  idiomesHtml += "<li>" + item.nom + " (nivell: " + item.nivell + ")</li>";
-			});
-			$("#idiomes ul").html(idiomesHtml);
+        let htmlHabilitats = `<h2>${data.habilitats.titol}</h2>`;
 
-			$("#experiencia p").text(data.experiencia);
+        Object.values(data.habilitats).forEach(function (bloc) {
+          if (bloc.titol && bloc.items) {
+            htmlHabilitats += `<h3>${bloc.titol}</h3><ul class="skills-list">`;
+            bloc.items.forEach(function (hab) {
+              htmlHabilitats += `<li>${hab.nom}: ${generarEstrelles(hab.nivell)}</li>`;
+            });
+            htmlHabilitats += `</ul>`;
+          }
+        });
 
-			let formacioHtml = "";
-			data.formacio.forEach(function(item){
-			  formacioHtml += "<li>" + item.period + " - " + item.titol + " (" + item.centre + ")</li>";
-			});
-			$("#formacio ul").html(formacioHtml);
+        $("#habilitats").html(htmlHabilitats);
 
-			let certificatsHtml = "";
-			data.certificats.forEach(function(item){
-			  certificatsHtml += "<li>" + item.data + " - " + item.titol + "</li>";
-			});
-			$("#certificats ul").html(certificatsHtml);
+        let idiomesHtml = "";
+        data.idiomes.forEach(function(item){
+          idiomesHtml += "<li>" + item.nom + ": " + generarEstrelles(item.nivell) + "</li>";
+        });
+        $("#idiomes ul").html(idiomesHtml);
 
-			$("#contacte p:eq(0)").text("Email: " + data.contacte.email);
-			$("#contacte p:eq(1)").text("Telèfon: " + data.contacte.telefon);
-			$("#contacte p:eq(2)").text("LinkedIn: " + data.contacte.linkedin);
-		  });
-		}
+        $("#experiencia p").remove(); 
+        data.experiencia.forEach(paragraf => {
+          $("#experiencia").append(`<p>${paragraf}</p>`);
+        });
+
+        let formacioHtml = "";
+        data.formacio.forEach(function(item){
+          formacioHtml += "<li>" + item.period + " - " + item.titol + " (" + item.centre + ")</li>";
+        });
+        $("#formacio ul").html(formacioHtml);
+
+        let certificatsHtml = "";
+        data.certificats.forEach(function(item){
+          certificatsHtml += "<li>" + item.data + " - " + item.titol + "</li>";
+        });
+        $("#certificats ul").html(certificatsHtml);
+
+        $("#contacte p:eq(0)").html("Email: <a href='mailto:" + data.contacte.email + "'>" + data.contacte.email + "</a>");
+        $("#contacte p:eq(1)").html(data.contacte.telefon_label + ": <a href='tel:" + data.contacte.telefon + "'>" + data.contacte.telefon + "</a>");
+        $("#contacte p:eq(2)").html("LinkedIn: <a href='https://" + data.contacte.linkedin + "' target='_blank'>" + data.contacte.linkedin + "</a>");
+
+      });
+    }
 
 
 		  $(".idiomes img").click(function() {

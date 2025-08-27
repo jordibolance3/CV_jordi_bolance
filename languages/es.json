@@ -1,6 +1,6 @@
 {
   "header": {
-    "nom": "Jordi Bolance",
+    "nom": "Jordi Bolance Navarro",
     "titol": "Estudiante de Ingeniería Informática",
     "subtitol": "Deseando dar mis primeros pasos en la industria"
   },
@@ -26,7 +26,10 @@
     "certificats": "Certificados",
     "contacte": "Información de Contacto"
   },
-  "presentacio": "Soy estudiante de tercer curso de Ingeniería Informática con muchas ganas de dar mis primeros pasos en la industria. Con una actitud abierta, estoy enfocado en aprender, alcanzar objetivos y aportar mis habilidades para apoyar a los equipos y ayudar a las empresas a crecer.",
+  "presentacio": [
+    "Soy estudiante de cuarto curso de Ingeniería Informática y ya he dado mis primeros pasos en la industria, con dos meses de prácticas en una empresa tecnológica. Allí tuve la oportunidad de hablar directamente con clientes, entender sus necesidades y transformarlas en propuestas concretas de implementación.",
+    "Me gusta aportar ideas tanto para mejorar programas existentes como para iniciar nuevos proyectos desde cero, con una actitud proactiva y orientada a resultados. Me considero una persona abierta y colaborativa, con ganas de aprender constantemente y de contribuir al crecimiento de los equipos y de las empresas en las que participo."
+  ],
   "projectes": [
     {
       "titol": "Contribución a la modificación de juegos",
@@ -37,35 +40,75 @@
       "descripcio": "He creado y gestionado un servidor de juegos online para mis amigos, aprendiendo aspectos técnicos como la configuración del servidor y modificaciones del juego, así como aspectos creativos como la organización de eventos y la gestión de interacciones y conflictos entre jugadores."
     }
   ],
-  "rendiment": "Académicamente me considero un buen estudiante. Aunque mi nota media es de 7,1, nunca he tenido que repetir un examen y me he sentido cómodo con todas las asignaturas.",
-  "habilitats": [
-    {"titol": "Capacidad de aprendizaje", "nivell": 5},
-    {"titol": "Trabajo en equipo", "nivell": 5},
-    {"titol": "Habilidades de comunicación", "nivell": 4.5},
-    {"titol": "Diligencia y compromiso", "nivell": 5},
-    {"titol": "Mentalidad analítica", "nivell": 5},
-    {"titol": "Programación estructurada", "nivell": 5},
-    {"titol": "Dominio de Java", "nivell": 5},
-    {"titol": "Creación de modelos de datos", "nivell": 5},
-    {"titol": "Inteligencia emocional", "nivell": 5}
+  "rendiment": [
+    "Soy un estudiante de cuarto curso de Ingeniería Informática con una nota media de 7,3. He demostrado solidez académica con dos matrículas de honor en las asignaturas Paradigmas y Lenguajes de Programación e Informática Industrial y Robótica, y un excelente en Sistemas Digitales.",
+    "Como proyecto destacado, junto con dos compañeros, fuimos los únicos en completar con éxito una tarea práctica con un robot Staubli programado con VAL3, demostrando capacidad de trabajo en equipo, resolución de problemas y aplicación práctica de los conocimientos teóricos.",
+    "Me considero un estudiante con fuertes competencias analíticas y técnicas, capaz de superar retos y aportar valor a los equipos y empresas en los que participo."
   ],
+  "habilitats": {
+    "titol": "Habilidades",
+    "competencies_personals": {
+      "titol": "Competencias personales",
+      "items": [
+        { "nom": "Capacidad de aprendizaje", "nivell": 5 },
+        { "nom": "Trabajo en equipo", "nivell": 5 },
+        { "nom": "Comunicación y contacto con clientes", "nivell": 5 },
+        { "nom": "Inteligencia emocional", "nivell": 5 },
+        { "nom": "Diligencia y compromiso", "nivell": 5 },
+        { "nom": "Resolución de problemas", "nivell": 5 },
+        { "nom": "Teletrabajo", "nivell": 5 },
+        { "nom": "Aportar nuevas soluciones e ideas", "nivell": 5 }
+      ]
+    },
+    "competencies_tecniques": {
+      "titol": "Competencias técnicas / Programación",
+      "items": [
+        { "nom": "Programación estructurada", "nivell": 5 },
+        { "nom": "Java", "nivell": 5 },
+        { "nom": "PHP", "nivell": 5 },
+        { "nom": "Python", "nivell": 4 },
+        { "nom": "C / C++", "nivell": 5 },
+        { "nom": "Haskell", "nivell": 5 },
+        { "nom": "Prolog", "nivell": 5 },
+        { "nom": "HTML / CSS", "nivell": 4 },
+        { "nom": "JavaScript", "nivell": 4 },
+        { "nom": "jQuery / jQuery UI / jQuery Mobile", "nivell": 5 }
+      ]
+    },
+    "bases_dades_doc": {
+      "titol": "Bases de datos y documentación",
+      "items": [
+        { "nom": "Creación y gestión de modelos de datos", "nivell": 5 },
+        { "nom": "MySQL", "nivell": 5 },
+        { "nom": "Documentación de programas", "nivell": 4 }
+      ]
+    }
+  },
   "idiomes": [
     {"nom": "Catalán", "nivell": 5},
     {"nom": "Español", "nivell": 5},
-    {"nom": "Inglés", "nivell": 5}
+    {"nom": "Inglés", "nivell": 4}
   ],
-  "experiencia": "Aunque todavía no tengo experiencia profesional, aporto solidez técnica y compromiso para aprender y contribuir de manera efectiva dentro de un equipo.",
+  "experiencia": [
+    "Del 01/06/2025 al 31/07/2025 hice prácticas de Software Engineer en SATB2C.",
+    "Trabajé resolviendo pequeños problemas y conflictos que surgían entre los diferentes clientes, solucionando problemas de código y gestión de bases de datos.",
+    "Tuve contacto directo con los clientes para resolver problemas, escuchar y valorar propuestas para añadir al programa, interpretarlas e implementarlas según las necesidades del cliente.",
+    "Desarrollé páginas web utilizando plantillas de WordPress y PrestaShop, gestionando altas y bajas de usuarios, realizando consultas a la base de datos de manera más óptima y actualizando código PHP a versiones más recientes.",
+    "Trabajé con HTML, JavaScript, CSS y PHP para crear portales web y aplicaciones."
+  ],
   "formacio": [
     {"period": "2022-09 - actualidad", "titol": "Ingeniería Informática", "centre": "Universidad de Girona, Girona", "descripcio": "Actualmente cursando el tercer año de estudios"},
     {"period": "2020-09 - 2022-05", "titol": "Bachillerato Tecnológico", "centre": "Institut Baix Montseny, Sant Celoni"}
   ],
   "certificats": [
+    {"data": "2020-06", "titol": "Certificado First de Inglés"},
     {"data": "2024-02", "titol": "Permiso de conducir"},
-    {"data": "2020-06", "titol": "First Certificate in English"}
+    { "data": "2025-08", "titol": "Certificado de finalización del curso \"Todo jQuery de novato a experto\" (Udemy)"}
   ],
   "contacte": {
-    "email": "u1988989@campus.udg.edu",
-    "telefon": "644761615",
-    "linkedin": "linkedin.com/in/jordibolance"
+    "email": "jordi.bolance3@gmail.com",
+    "telefon": "+34 644 761 615",
+    "linkedin": "linkedin.com/in/jordi-bolance-navarro-55b95936a",
+    "telefon_label": "Teléfono"
   }
 }

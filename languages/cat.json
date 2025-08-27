@@ -1,17 +1,17 @@
 {
   "header": {
-    "nom": "Jordi Bolance",
+    "nom": "Jordi Bolance Navarro",
     "titol": "Estudiant d'Enginyeria Informàtica",
     "subtitol": "Amb ganes de fer els meus primers passos a la indústria"
   },
   "nav": {
     "presentacio": "Presentació",
     "projectes": "Projectes",
-    "rendiment": "Rendiment",
-    "habilitats": "Competències",
+    "rendiment": "Rendiment Acadèmic",
+    "habilitats": "Habilitats",
     "idiomes": "Idiomes",
-    "experiencia": "Experiència",
-    "formacio": "Formació",
+    "experiencia": "Experiència Laboral",
+    "formacio": "Educació",
     "certificats": "Certificats",
     "contacte": "Contacte"
   },
@@ -19,14 +19,17 @@
     "presentacio": "Sobre mi",
     "projectes": "Projectes Personals",
     "rendiment": "Rendiment Acadèmic",
-    "habilitats": "Habilitats i Competències",
+    "habilitats": "Habilitats",
     "idiomes": "Idiomes",
-    "experiencia": "Experiència Professional",
-    "formacio": "Formació",
+    "experiencia": "Experiència Laboral",
+    "formacio": "Educació",
     "certificats": "Certificats",
-    "contacte": "Informació de Contacte"
+    "contacte": "Contacte"
   },
-  "presentacio": "Sóc estudiant de tercer curs d'Enginyeria Informàtica amb moltes ganes de fer els meus primers passos a la indústria. Amb una actitud oberta, estic enfocat a aprendre, assolir objectius i aportar les meves habilitats per donar suport als equips i ajudar les empreses a créixer.",
+  "presentacio": [
+  "Sóc estudiant de quart curs d’Enginyeria Informàtica i ja he fet els primers passos dins la indústria, amb dos mesos de pràctiques en una empresa tecnològica. Allà vaig tenir l’oportunitat de parlar directament amb clients, entendre les seves necessitats i transformar-les en propostes concretes d’implementació.",
+  "M’agrada aportar idees tant per a la millora de programes existents com per iniciar nous projectes des de zero, amb una actitud proactiva i orientada a resultats. Em considero una persona oberta i col·laborativa, amb ganes d’aprendre constantment i de contribuir al creixement dels equips i de les empreses en què participo."
+  ],
   "projectes": [
     {
       "titol": "Contribució a la modificació de jocs",
@@ -37,35 +40,75 @@
       "descripcio": "He creat i gestionat un servidor de jocs online per als meus amics, aprenent aspectes tècnics com la configuració del servidor i les modificacions del joc, així com aspectes creatius com l'organització d'esdeveniments i la gestió d'interaccions i conflictes entre jugadors."
     }
   ],
-  "rendiment": "Acadèmicament em considero un bon estudiant. Tot i que la meva nota mitjana és de 7,1, mai no he hagut de repetir cap examen i m'he sentit còmode amb totes les assignatures.",
-  "habilitats": [
-    {"titol": "Capacitat d'aprenentatge", "nivell": 5},
-    {"titol": "Treball en equip", "nivell": 5},
-    {"titol": "Habilitats de comunicació", "nivell": 4.5},
-    {"titol": "Diligència i compromís", "nivell": 5},
-    {"titol": "Mentalitat analítica", "nivell": 5},
-    {"titol": "Programació estructurada", "nivell": 5},
-    {"titol": "Domini de Java", "nivell": 5},
-    {"titol": "Creació de models de dades", "nivell": 5},
-    {"titol": "Intel·ligència emocional", "nivell": 5}
+  "rendiment": [
+    "Sóc un estudiant de quart curs d’Enginyeria Informàtica amb una nota mitjana de 7,3. He demostrat solidesa acadèmica amb dues matrícules d’honor a les assignatures Paradigmes i Llenguatges de Programació i Informàtica Industrial i Robòtica, i un excel·lent a Sistemes Digitals.",
+    "Com a projecte destacat, juntament amb dos companys, vam ser els únics a completar amb èxit una tasca pràctica amb un robot Staubli programat amb VAL3, demostrant capacitat de treball en equip, resolució de problemes i aplicació pràctica dels coneixements teòrics.",
+    "Em considero un estudiant amb fortes competències analítiques i tècniques, capaç de superar reptes i aportar valor als equips i empreses en què participo."
   ],
+  "habilitats": {
+    "titol": "Habilitats",
+    "competencies_personals": {
+      "titol": "Competències personals",
+      "items": [
+        { "nom": "Capacitat d’aprenentatge", "nivell": 5 },
+        { "nom": "Treball en equip", "nivell": 5 },
+        { "nom": "Comunicació i contacte amb clients", "nivell": 5 },
+        { "nom": "Intel·ligència emocional", "nivell": 5 },
+        { "nom": "Diligència i compromís", "nivell": 5 },
+        { "nom": "Resolució de problemes", "nivell": 5 },
+        { "nom": "Teletreball", "nivell": 5 },
+        { "nom": "Aportar noves solucions i idees", "nivell": 5 }
+      ]
+    },
+    "competencies_tecniques": {
+      "titol": "Competències tècniques / Programació",
+      "items": [
+        { "nom": "Programació estructurada", "nivell": 5 },
+        { "nom": "Java", "nivell": 5 },
+        { "nom": "PHP", "nivell": 5 },
+        { "nom": "Python", "nivell": 4 },
+        { "nom": "C / C++", "nivell": 5 },
+        { "nom": "Haskell", "nivell": 5 },
+        { "nom": "Prolog", "nivell": 5 },
+        { "nom": "HTML / CSS", "nivell": 4 },
+        { "nom": "JavaScript", "nivell": 4 },
+        { "nom": "jQuery / jQuery UI / jQuery Mobile", "nivell": 5 }
+      ]
+    },
+    "bases_dades_doc": {
+      "titol": "Bases de dades i documentació",
+      "items": [
+        { "nom": "Creació i gestió de models de dades", "nivell": 5 },
+        { "nom": "MySQL", "nivell": 5 },
+        { "nom": "Documentació de programes", "nivell": 4 }
+      ]
+    }
+  },
   "idiomes": [
     {"nom": "Català", "nivell": 5},
     {"nom": "Espanyol", "nivell": 5},
-    {"nom": "Anglès", "nivell": 5}
+    {"nom": "Anglès", "nivell": 4}
   ],
-  "experiencia": "Encara que no tinc experiència professional, aporto solidesa tècnica i compromís per aprendre i contribuir de manera efectiva dins d'un equip.",
+  "experiencia": [
+      "Del 01/06/2025 al 31/07/2025 vaig fer pràctiques de Software Engineer a SATB2C.",
+      "Vaig treballar resolent petits problemes i conflictes que s'anaven trobant els diferents clients, solucionant problemes de codi i de gestió de bases de dades.",
+      "Tenia contacte directe amb clients per resoldre problemes, escoltar i valorar proposicions per afegir al programa, interpretar-les i implementar-les segons les necessitats del client.",
+      "Vaig desenvolupar pàgines web utilitzant plantilles de WordPress i PrestaShop, gestionar altes i baixes d'usuaris, fer consultes a la base de dades de manera més òptima i actualitzar codi PHP a versions més recents.",
+      "Vaig treballar amb HTML, JavaScript, CSS i PHP per crear portals web i aplicacions."
+  ],
   "formacio": [
     {"period": "2022-09 - actualitat", "titol": "Enginyeria Informàtica", "centre": "Universitat de Girona, Girona", "descripcio": "Actualment cursant el tercer any d'estudis"},
     {"period": "2020-09 - 2022-05", "titol": "Batxillerat Tecnològic", "centre": "Institut Baix Montseny, Sant Celoni"}
   ],
   "certificats": [
+    {"data": "2020-06", "titol": "Certificat First d’Anglès"},
     {"data": "2024-02", "titol": "Permís de conduir"},
-    {"data": "2020-06", "titol": "First Certificate in English"}
+    { "data": "2025-08", "titol": "Certificat de finalització del curs \"Todo jQuery de novato a experto\" (Udemy)" }
   ],
   "contacte": {
-    "email": "u1988989@campus.udg.edu",
-    "telefon": "644761615",
-    "linkedin": "linkedin.com/in/jordibolance"
+    "email": "jordi.bolance3@gmail.com",
+    "telefon": "+34 644 761 615",
+    "linkedin": "linkedin.com/in/jordi-bolance-navarro-55b95936a",
+    "telefon_label": "Telèfon"
   }
 }

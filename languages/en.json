@@ -1,6 +1,6 @@
 {
   "header": {
-    "nom": "Jordi Bolance",
+    "nom": "Jordi Bolance Navarro",
     "titol": "Computer Engineering Student",
     "subtitol": "Aspiring to make my first steps in the industry"
   },
@@ -26,7 +26,10 @@
     "certificats": "Certificates",
     "contacte": "Contact Information"
   },
-  "presentacio": "I am a third-year Computer Engineering student eager to take my first steps in the industry. With an open attitude, I am focused on learning, achieving goals, and leveraging my skills to support teams and help companies grow.",
+  "presentacio": [
+    "I am a fourth-year Computer Engineering student and I have already taken my first steps in the industry, with two months of internship in a technology company. There, I had the opportunity to talk directly with clients, understand their needs, and turn them into concrete implementation proposals.",
+    "I enjoy contributing ideas both to improve existing programs and to start new projects from scratch, with a proactive and results-oriented mindset. I consider myself an open and collaborative person, eager to constantly learn and contribute to the growth of the teams and companies I participate in."
+  ],
   "projectes": [
     {
       "titol": "Game Modification Contribution",
@@ -37,35 +40,75 @@
       "descripcio": "I created and managed an online game server for my friends, learning technical aspects like server configuration and game modifications, as well as creative aspects such as organizing events and managing interactions and conflicts between players."
     }
   ],
-  "rendiment": "Academically, I consider myself a good student. Although my average grade is 7.1, I have never had to retake an exam and have felt comfortable with all subjects.",
-  "habilitats": [
-    {"titol": "Learning Ability", "nivell": 5},
-    {"titol": "Teamwork", "nivell": 5},
-    {"titol": "Communication Skills", "nivell": 4.5},
-    {"titol": "Diligence and Commitment", "nivell": 5},
-    {"titol": "Analytical Mindset", "nivell": 5},
-    {"titol": "Structured Programming", "nivell": 5},
-    {"titol": "Java Proficiency", "nivell": 5},
-    {"titol": "Data Modeling", "nivell": 5},
-    {"titol": "Emotional Intelligence", "nivell": 5}
+  "rendiment": [
+    "I am a fourth-year Computer Engineering student with a GPA of 7.3. I have demonstrated academic strength with two honors in the subjects Paradigms and Programming Languages and Industrial Informatics and Robotics, and an excellent grade in Digital Systems.",
+    "As a highlight project, together with two classmates, we were the only ones to successfully complete a practical task with a Staubli robot programmed in VAL3, demonstrating teamwork skills, problem-solving, and the practical application of theoretical knowledge.",
+    "I consider myself a student with strong analytical and technical skills, capable of overcoming challenges and adding value to the teams and companies I participate in."
   ],
+  "habilitats": {
+    "titol": "Skills",
+    "competencies_personals": {
+      "titol": "Personal competences",
+      "items": [
+        { "nom": "Learning ability", "nivell": 5 },
+        { "nom": "Teamwork", "nivell": 5 },
+        { "nom": "Communication and client contact", "nivell": 5 },
+        { "nom": "Emotional intelligence", "nivell": 5 },
+        { "nom": "Diligence and commitment", "nivell": 5 },
+        { "nom": "Problem solving", "nivell": 5 },
+        { "nom": "Remote work", "nivell": 5 },
+        { "nom": "Bringing new solutions and ideas", "nivell": 5 }
+      ]
+    },
+    "competencies_tecniques": {
+      "titol": "Technical competences / Programming",
+      "items": [
+        { "nom": "Structured programming", "nivell": 5 },
+        { "nom": "Java", "nivell": 5 },
+        { "nom": "PHP", "nivell": 5 },
+        { "nom": "Python", "nivell": 4 },
+        { "nom": "C / C++", "nivell": 5 },
+        { "nom": "Haskell", "nivell": 5 },
+        { "nom": "Prolog", "nivell": 5 },
+        { "nom": "HTML / CSS", "nivell": 4 },
+        { "nom": "JavaScript", "nivell": 4 },
+        { "nom": "jQuery / jQuery UI / jQuery Mobile", "nivell": 5 }
+      ]
+    },
+    "bases_dades_doc": {
+      "titol": "Databases and documentation",
+      "items": [
+        { "nom": "Creation and management of data models", "nivell": 5 },
+        { "nom": "MySQL", "nivell": 5 },
+        { "nom": "Program documentation", "nivell": 4 }
+      ]
+    }
+  },
   "idiomes": [
     {"nom": "Catalan", "nivell": 5},
     {"nom": "Spanish", "nivell": 5},
-    {"nom": "English", "nivell": 5}
+    {"nom": "English", "nivell": 4}
   ],
-  "experiencia": "Although I do not have professional experience yet, I bring technical solidity and commitment to learn and contribute effectively within a team.",
+  "experiencia": [
+      "From 01/06/2025 to 31/07/2025 I did an internship as a Software Engineer at SATB2C.",
+      "I worked solving small issues and conflicts that clients encountered, fixing code and database problems.",
+      "I had direct contact with clients to resolve problems, listen and evaluate proposals to add to the software, interpret them, and implement according to the client’s needs.",
+      "I developed web pages using WordPress and PrestaShop templates, managed user accounts, optimized database queries, and updated PHP code to more recent versions.",
+      "I worked with HTML, JavaScript, CSS, and PHP to create web portals and applications."
+  ],
   "formacio": [
     {"period": "2022-09 - present", "titol": "Computer Engineering", "centre": "University of Girona, Girona", "descripcio": "Currently in my third year of studies"},
     {"period": "2020-09 - 2022-05", "titol": "Technological Baccalaureate", "centre": "Institut Baix Montseny, Sant Celoni"}
   ],
   "certificats": [
+    {"data": "2020-06", "titol": "First Certificate in English"},
     {"data": "2024-02", "titol": "Driving License"},
-    {"data": "2020-06", "titol": "First Certificate in English"}
+    {"data": "2025-08", "titol": "Certificate of completion of the course \"Todo jQuery de novato a experto\" (Udemy)" }
   ],
   "contacte": {
-    "email": "u1988989@campus.udg.edu",
-    "telefon": "644761615",
-    "linkedin": "linkedin.com/in/jordibolance"
+    "email": "jordi.bolance3@gmail.com",
+    "telefon": "+34 644 761 615",
+    "linkedin": "linkedin.com/in/jordi-bolance-navarro-55b95936a",
+    "telefon_label": "Phone"
   }
 }
