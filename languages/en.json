@@ -1,109 +1,216 @@
 {
   "header": {
     "nom": "Jordi Bolance Navarro",
-    "titol": "Computer Engineering Student",
-    "subtitol": "Aspiring to make my first steps in the industry"
+    "titol": "Software Developer at SATB2C | Computer Engineer",
+    "subtitol": "Software Developer at SATB2C"
   },
   "nav": {
     "presentacio": "Presentation",
-    "projectes": "Projects",
-    "rendiment": "Performance",
-    "habilitats": "Skills",
-    "idiomes": "Languages",
     "experiencia": "Experience",
     "formacio": "Education",
     "certificats": "Certificates",
+    "habilitats": "Skills",
+    "idiomes": "Languages",
     "contacte": "Contact"
   },
   "h2": {
     "presentacio": "About me",
-    "projectes": "Personal Projects",
-    "rendiment": "Academic Performance",
-    "habilitats": "Skills & Competences",
-    "idiomes": "Languages",
     "experiencia": "Professional Experience",
     "formacio": "Education",
     "certificats": "Certificates",
+    "habilitats": "Skills & Competences",
+    "idiomes": "Languages",
     "contacte": "Contact Information"
   },
   "presentacio": [
-    "I am a fourth-year Computer Engineering student and I have already taken my first steps in the industry, with two months of internship in a technology company. There, I had the opportunity to talk directly with clients, understand their needs, and turn them into concrete implementation proposals.",
-    "I enjoy contributing ideas both to improve existing programs and to start new projects from scratch, with a proactive and results-oriented mindset. I consider myself an open and collaborative person, eager to constantly learn and contribute to the growth of the teams and companies I participate in."
-  ],
-  "projectes": [
-    {
-      "titol": "Game Modification Contribution",
-      "descripcio": "I independently modified a game to improve some mechanics, driven by curiosity and a desire to experiment with game development."
-    },
-    {
-      "titol": "Online Game Server Management",
-      "descripcio": "I created and managed an online game server for my friends, learning technical aspects like server configuration and game modifications, as well as creative aspects such as organizing events and managing interactions and conflicts between players."
-    }
-  ],
-  "rendiment": [
-    "I am a fourth-year Computer Engineering student with a GPA of 7.3. I have demonstrated academic strength with two honors in the subjects Paradigms and Programming Languages and Industrial Informatics and Robotics, and an excellent grade in Digital Systems.",
-    "As a highlight project, together with two classmates, we were the only ones to successfully complete a practical task with a Staubli robot programmed in VAL3, demonstrating teamwork skills, problem-solving, and the practical application of theoretical knowledge.",
-    "I consider myself a student with strong analytical and technical skills, capable of overcoming challenges and adding value to the teams and companies I participate in."
+    "Computer Engineer with a solid foundation in software development and one year of professional experience as a Full Stack Developer.",
+    "I have proven experience working on both the frontend and backend of web applications, delivering reliable and efficient solutions.",
+    "I consider myself a curious, proactive, and results-oriented person, eager to keep learning and growing in the field of software engineering and information technologies. I am passionate about clean code, teamwork, and taking on new challenges that allow me to apply my knowledge and acquire new skills.",
+    "My goal is to continue advancing my career in the technology sector, contributing value to innovative, high-impact projects."
   ],
   "habilitats": {
     "titol": "Skills",
-    "competencies_personals": {
-      "titol": "Personal competences",
-      "items": [
-        { "nom": "Learning ability", "nivell": 5 },
-        { "nom": "Teamwork", "nivell": 5 },
-        { "nom": "Communication and client contact", "nivell": 5 },
-        { "nom": "Emotional intelligence", "nivell": 5 },
-        { "nom": "Diligence and commitment", "nivell": 5 },
-        { "nom": "Problem solving", "nivell": 5 },
-        { "nom": "Remote work", "nivell": 5 },
-        { "nom": "Bringing new solutions and ideas", "nivell": 5 }
-      ]
-    },
-    "competencies_tecniques": {
-      "titol": "Technical competences / Programming",
-      "items": [
-        { "nom": "Structured programming", "nivell": 5 },
-        { "nom": "Java", "nivell": 5 },
-        { "nom": "PHP", "nivell": 5 },
-        { "nom": "Python", "nivell": 4 },
-        { "nom": "C / C++", "nivell": 5 },
-        { "nom": "Haskell", "nivell": 5 },
-        { "nom": "Prolog", "nivell": 5 },
-        { "nom": "HTML / CSS", "nivell": 4 },
-        { "nom": "JavaScript", "nivell": 4 },
-        { "nom": "jQuery / jQuery UI / jQuery Mobile", "nivell": 5 }
-      ]
-    },
-    "bases_dades_doc": {
-      "titol": "Databases and documentation",
-      "items": [
-        { "nom": "Creation and management of data models", "nivell": 5 },
-        { "nom": "MySQL", "nivell": 5 },
-        { "nom": "Program documentation", "nivell": 4 }
-      ]
-    }
+    "blocs": [
+      {
+        "titol": "Full stack development",
+        "items": [
+          "PHP",
+          "JavaScript",
+          "HTML / CSS",
+          "MySQL",
+          "Database integration",
+          "Excel exports",
+          "Conditional form logic",
+          "Web portals and applications"
+        ]
+      },
+      {
+        "titol": "Mobile development and architecture",
+        "items": [
+          "Framework7",
+          "Apache Cordova",
+          "Android",
+          "Offline-first SQLite",
+          "Cloud synchronization",
+          "Legacy system refactoring",
+          "Application architecture"
+        ]
+      },
+      {
+        "titol": "AI and automation",
+        "items": [
+          "Google Gemini API",
+          "STT / TTS",
+          "Voice assistants",
+          "n8n",
+          "AI chatbots",
+          "Process automation",
+          "LLM cost auditing"
+        ]
+      },
+      {
+        "titol": "Data and documentation",
+        "items": [
+          "Relational modeling",
+          "Entity-Relationship diagrams",
+          "SQL optimization",
+          "Data imports",
+          "Test data generation",
+          "Technical documentation"
+        ]
+      },
+      {
+        "titol": "Software engineering",
+        "items": [
+          "Object-Oriented Programming",
+          "Data structures",
+          "Recursion",
+          "Memory management",
+          "UML diagrams",
+          "Clean code",
+          "Problem solving"
+        ]
+      },
+      {
+        "titol": "Professional competences",
+        "items": [
+          "Client contact",
+          "Technical communication",
+          "Teamwork",
+          "Mentoring",
+          "Autonomy",
+          "Time management",
+          "Results orientation"
+        ]
+      }
+    ]
   },
   "idiomes": [
-    {"nom": "Catalan", "nivell": 5},
-    {"nom": "Spanish", "nivell": 5},
-    {"nom": "English", "nivell": 4}
+    {
+      "nom": "Catalan",
+      "nivell": 5
+    },
+    {
+      "nom": "Spanish",
+      "nivell": 5
+    },
+    {
+      "nom": "English",
+      "nivell": 4
+    }
   ],
   "experiencia": [
-      "From 01/06/2025 to 31/07/2025 I did an internship as a Software Engineer at SATB2C.",
-      "I worked solving small issues and conflicts that clients encountered, fixing code and database problems.",
-      "I had direct contact with clients to resolve problems, listen and evaluate proposals to add to the software, interpret them, and implement according to the client’s needs.",
-      "I developed web pages using WordPress and PrestaShop templates, managed user accounts, optimized database queries, and updated PHP code to more recent versions.",
-      "I worked with HTML, JavaScript, CSS, and PHP to create web portals and applications."
+    {
+      "cargo": "Junior Programmer",
+      "empresa": "SATB2C SL",
+      "logo": "images/satb2c_logo.png",
+      "tipo": "Part-time",
+      "periodo": "September 2025 - present",
+      "ubicacion": "Girona · Hybrid",
+      "descripcion": [
+        "During this period, I expanded my role from refactoring legacy systems to leading R&D initiatives, workflow automation, and growth engineering. I led the architectural modernization of SATB2C's core platform, which also became the basis of my final degree project at the University of Girona, designing software and marketing solutions for international clients.",
+        "In software modernization and mobile engineering, I migrated the SAT Android app from jQuery to Framework7 and pure JavaScript, designing an offline-first architecture with SQLite to ensure full mobile operability and automatic cloud synchronization. I also led the frontend refactoring of the SAT corporate portal, removing Bootstrap and jQuery dependencies through CSS and pure JavaScript to optimize data grids.",
+        "I worked extensively with Apache Cordova to build and maintain multiple Android applications, administered MySQL databases, and executed complex data import processes for the main client.",
+        "In AI innovation and process automation, I integrated the Google Gemini API into the mobile app through a dynamic context window and an asynchronous STT/TTS voice interaction loop for hands-free diagnostics. I also designed backend automations with n8n, connecting AI chatbots with corporate processes such as automatic service creation and real-time holiday queries.",
+        "I redesigned the technical mobile solution into a new application adapted for sales teams and B2B sales workflows, and audited LLM token costs to ensure product scalability."
+      ]
+    },
+    {
+      "cargo": "Full Stack Programmer",
+      "empresa": "SATB2C SL",
+      "logo": "images/satb2c_logo.png",
+      "tipo": "Internship contract",
+      "periodo": "June 2025 - August 2025",
+      "ubicacion": "Girona, Catalonia, Spain · On-site",
+      "descripcion": [
+        "During my three-month internship, I worked extensively with MySQL databases: creating and modifying tables, managing keys, optimizing queries, and correcting data errors. On both the frontend and backend, I designed and improved complete forms, integrating conditional logic to optimize the user experience.",
+        "I developed end-to-end features in PHP, including database connections and Excel exports, and also participated in the management of user roles and permissions. In addition, I maintained direct contact with clients, interpreting their needs and proposing concrete improvements.",
+        "Other responsibilities included creating custom dashboards, generating test data, preparing features for production, and writing technical documentation. These tasks helped me grow both technically and personally, strengthening my autonomy, time management, and teamwork in a collaborative environment.",
+        "After successfully meeting the internship objectives, I specialized in web and mobile development for clients in the services sector, also participating in innovation initiatives, including an introduction to artificial intelligence technologies."
+      ]
+    },
+    {
+      "cargo": "Private Computer Engineering Tutor",
+      "empresa": "Freelance | Self-Employed",
+      "icono": "CE",
+      "tipo": "Independent professional",
+      "periodo": "September 2025 - June 2026",
+      "ubicacion": "Sant Celoni, Catalonia, Spain · On-site",
+      "descripcion": [
+        "I provided personalized academic mentoring and technical training to a third-year Computer Engineering student at the University of Girona (UdG).",
+        "In software methodology and engineering, I provided advanced mentoring in Object-Oriented Programming, memory management with pointers, data structures such as stacks and queues, recursion, and technical diagram design for class, activity, and sequence diagrams.",
+        "In databases, I supported relational design and modeling through Entity-Relationship diagrams and SQL query optimization.",
+        "In computer architecture, I reinforced analysis of the internal operation of processors and low-level code development in Assembler.",
+        "In networks and interfaces, I taught communication protocols such as IP, TCP, HTTP, and web, basic infrastructure management with servers and routers, and fundamentals of multimedia and user interfaces."
+      ]
+    }
   ],
   "formacio": [
-    {"period": "2022-09 - present", "titol": "Computer Engineering", "centre": "University of Girona, Girona", "descripcio": "Currently in my third year of studies"},
-    {"period": "2020-09 - 2022-05", "titol": "Technological Baccalaureate", "centre": "Institut Baix Montseny, Sant Celoni"}
+    {
+      "titol": "Bachelor's Degree in Computer Engineering",
+      "centre": "University of Girona",
+      "logo": "images/udg_logo.png",
+      "icono": "UdG",
+      "period": "September 2022 - June 2026",
+      "ubicacion": "Girona, Catalonia, Spain",
+      "descripcio": [
+        "Graduated in Computer Engineering with an average grade of 7.8/10.",
+        "Four honors distinctions: Programming Paradigms and Languages, Industrial Informatics and Robotics, Management and Communication Skills, and Production Management and Logistics.",
+        "Excellent grades in Workplace Internship, Database Management Systems, and Digital Systems.",
+        "Final Degree Project: I developed and deployed a comprehensive architectural modernization for SATB2C's Android platform. I migrated a legacy jQuery system to Framework7 and pure JavaScript, designed an offline-first SQLite architecture for field technicians, and integrated the Google Gemini API to create an interactive hands-free voice assistant loop with STT/TTS.",
+        "Strengthened skills: hard work, organization, a solid technical and analytical foundation, teamwork, and problem solving."
+      ]
+    },
+    {
+      "titol": "Baccalaureate, Science and Technology Track",
+      "centre": "Institut Baix Montseny",
+      "logo": "images/insti_logo.png",
+      "icono": "TB",
+      "period": "September 2020 - May 2022",
+      "ubicacion": "Sant Celoni, Catalonia, Spain",
+      "descripcio": [
+        "Science and Technology Baccalaureate track, focused on developing analytical, logical, and problem-solving foundations.",
+        "Specific subjects: Mathematics, Physics, Technology, and Technical Drawing.",
+        "Research Project: an exhaustive analysis of the historical rigor and fidelity of the acclaimed miniseries \"Band of Brothers\"."
+      ]
+    }
   ],
   "certificats": [
-    {"data": "2020-06", "titol": "First Certificate in English"},
-    {"data": "2024-02", "titol": "Driving License"},
-    {"data": "2025-08", "titol": "Certificate of completion of the course \"Todo jQuery de novato a experto\" (Udemy)" }
+    {
+      "data": "2020-06",
+      "titol": "First Certificate in English",
+      "logo": "images/cambridge.webp"
+    },
+    {
+      "data": "2024-02",
+      "titol": "Driving License",
+      "logo": "images/dgt.png"
+    },
+    {
+      "data": "2025-08",
+      "titol": "Certificate of completion of the course \"Todo jQuery de novato a experto\" (Udemy)",
+      "logo": "images/udemy.jpg"
+    }
   ],
   "contacte": {
     "email": "jordi.bolance3@gmail.com",

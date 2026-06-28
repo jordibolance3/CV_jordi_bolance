@@ -26,8 +26,13 @@
 	  height: 120px;
 	  border-radius: 50%; 
 	  border: 3px solid white;
+    cursor: zoom-in;
 	  margin-bottom: 1rem;
+    transition: transform 0.2s;
 	}
+  header img.foto:hover {
+    transform: scale(1.04);
+  }
   header a {
     color: white;
     font-weight: bold;
@@ -91,11 +96,200 @@
     .skills-list li, .languages-list li, .certificates-list li, .projects-list li, .education-list li {
       margin-bottom: 0.5rem;
     }
-    #projectes {
-      display: none;
+    .certificates-list {
+      display: grid;
+      gap: 0.85rem;
     }
-    nav a[data-section="projectes"] {
+    .certificate-item {
+      align-items: center;
+      border: 1px solid #d8e6f3;
+      border-radius: 8px;
+      display: flex;
+      gap: 0.85rem;
+      padding: 0.75rem;
+    }
+    .certificate-logo {
+      background: white;
+      border: 1px solid #e1e8ef;
+      border-radius: 8px;
+      flex: 0 0 48px;
+      height: 48px;
+      object-fit: contain;
+      padding: 0.35rem;
+      width: 48px;
+    }
+    .certificate-date {
+      color: #606f7b;
+      font-size: 0.9rem;
+      margin-bottom: 0.15rem;
+    }
+    .certificate-title {
+      color: #1f2933;
+      font-weight: bold;
+    }
+    .skills-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 1rem;
+    }
+    .skill-block {
+      border: 1px solid #d8e6f3;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    .skill-block h3 {
+      color: #005f99;
+      font-size: 1rem;
+      margin: 0 0 0.75rem;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+    .skill-tag {
+      background: #eef6fc;
+      border: 1px solid #d8e6f3;
+      border-radius: 999px;
+      color: #1f2933;
+      font-size: 0.9rem;
+      padding: 0.32rem 0.6rem;
+    }
+    .experience-timeline, .education-timeline {
+      border-left: 3px solid #d8e6f3;
+      margin-top: 1rem;
+      padding-left: 1.25rem;
+    }
+    .experience-item, .education-item {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .experience-item:last-child, .education-item:last-child {
+      margin-bottom: 0;
+    }
+    .experience-item::before, .education-item::before {
+      background: #005f99;
+      border: 3px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #d8e6f3;
+      content: "";
+      height: 12px;
+      left: calc(-1.25rem - 7px);
+      position: absolute;
+      top: 1.125rem;
+      width: 12px;
+    }
+    .experience-header, .education-header {
+      align-items: flex-start;
+      display: flex;
+      gap: 0.85rem;
+    }
+    .experience-logo, .education-logo {
+      background: white;
+      border: 1px solid #d8e6f3;
+      border-radius: 8px;
+      flex: 0 0 48px;
+      height: 48px;
+      object-fit: contain;
+      padding: 0.35rem;
+      width: 48px;
+    }
+    .experience-icon, .education-icon {
+      align-items: center;
+      background: #e9f4fb;
+      border: 1px solid #c6dced;
+      border-radius: 8px;
+      color: #005f99;
+      display: flex;
+      flex: 0 0 48px;
+      font-weight: bold;
+      height: 48px;
+      justify-content: center;
+      width: 48px;
+    }
+    .experience-heading, .education-heading {
+      min-width: 0;
+    }
+    .experience-role, .education-title {
+      color: #1f2933;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    .experience-company, .education-center {
+      color: #005f99;
+      font-weight: bold;
+      margin-top: 0.2rem;
+    }
+    .experience-meta, .education-meta {
+      color: #606f7b;
+      font-size: 0.92rem;
+      margin-top: 0.2rem;
+    }
+    .experience-description, .education-description {
+      margin: 0.85rem 0 0;
+      padding-left: 1.1rem;
+    }
+    .experience-description li, .education-description li {
+      line-height: 1.5;
+      margin-bottom: 0.7rem;
+    }
+    @media (max-width: 520px) {
+      .experience-header, .education-header {
+        gap: 0.65rem;
+      }
+      .experience-logo, .education-logo {
+        flex-basis: 40px;
+        height: 40px;
+        width: 40px;
+      }
+      .experience-icon, .education-icon {
+        flex-basis: 40px;
+        height: 40px;
+        width: 40px;
+      }
+      .certificate-logo {
+        flex-basis: 40px;
+        height: 40px;
+        width: 40px;
+      }
+    }
+    .photo-lightbox {
+      align-items: center;
+      background: rgba(0, 0, 0, 0.82);
+      bottom: 0;
       display: none;
+      justify-content: center;
+      left: 0;
+      padding: 1.5rem;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 1000;
+    }
+    .photo-lightbox.open {
+      display: flex;
+    }
+    .photo-lightbox img {
+      border: 4px solid white;
+      border-radius: 12px;
+      max-height: 86vh;
+      max-width: 90vw;
+      object-fit: contain;
+    }
+    .photo-lightbox button {
+      background: white;
+      border: none;
+      border-radius: 50%;
+      color: #1f2933;
+      cursor: pointer;
+      font-size: 1.6rem;
+      height: 42px;
+      line-height: 1;
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+      width: 42px;
     }
   </style>
 </head>
@@ -108,94 +302,241 @@
       <a href="#" title="Català"><img src="images/cat.png" alt="Català" class="catala"></a>
     </div>
 	  
-    <img src="images/fotoid.jpg" alt="Foto de Jordi Bolance" class="foto">
+    <img src="images/fotoid_2.jpg" alt="Foto de Jordi Bolance" class="foto" id="profile-photo" title="Ampliar foto">
     <h1>Jordi Bolance Navarro</h1>
-    <p>Estudiant d'Enginyeria Informàtica</p>
+    <p>Desenvolupador de Software a SATB2C | Enginyer Informàtic</p>
     <p>
       📧 <a href="mailto:jordi.bolance3@gmail.com">jordi.bolance3@gmail.com</a> |
       📞 <a href="tel:+34644761615">+34 644 761 615</a>
     </p>
   </header>
 
+  <div class="photo-lightbox" id="photo-lightbox" aria-hidden="true">
+    <button type="button" id="photo-lightbox-close" aria-label="Tancar foto">&times;</button>
+    <img src="images/fotoid_2.jpg" alt="Foto ampliada de Jordi Bolance">
+  </div>
+
   <nav>
     <a data-section="presentacio">Presentació</a>
-    <a data-section="projectes">Projectes</a>
-    <a data-section="rendiment">Rendiment Acadèmic</a>
-    <a data-section="habilitats">Habilitats</a>
-    <a data-section="idiomes">Idiomes</a>
     <a data-section="experiencia">Experiència Laboral</a>
     <a data-section="formacio">Educació</a>
     <a data-section="certificats">Certificats</a>
+    <a data-section="habilitats">Habilitats</a>
+    <a data-section="idiomes">Idiomes</a>
     <a data-section="contacte">Contacte</a>
   </nav>
 
   <section id="presentacio">
     <h2>Sobre mi</h2>
-    <p>Sóc estudiant de quart curs d’Enginyeria Informàtica i ja he fet els primers passos dins la indústria,
-       amb dos mesos de pràctiques en una empresa tecnològica. Allà vaig tenir l’oportunitat de parlar directament amb clients, 
-      entendre les seves necessitats i transformar-les en propostes concretes d’implementació.</p>
-      <p>M’agrada aportar idees tant per a la millora de programes existents com per iniciar nous projectes des de zero, 
-        amb una actitud proactiva i orientada a resultats. Em considero una persona oberta i col·laborativa, 
-        amb ganes d’aprendre constantment i de contribuir al creixement dels equips i de les empreses en què participo.</p>
+    <p>Enginyer Informàtic amb una base sòlida en desenvolupament de software i un any d’experiència professional com a Desenvolupador Full Stack.</p>
+    <p>Tinc experiència contrastada treballant tant en el frontend com en el backend d’aplicacions web, aportant solucions fiables i eficients.</p>
+    <p>Em considero una persona curiosa, proactiva i orientada a resultats, amb moltes ganes de continuar aprenent i creixent en l’àmbit de l’enginyeria de software i les tecnologies de la informació. M’apassiona el codi net, el treball en equip i afrontar nous reptes que em permetin aplicar els meus coneixements i adquirir noves habilitats.</p>
+    <p>El meu objectiu és continuar impulsant la meva carrera en el sector tecnològic, aportant valor en projectes innovadors i de gran impacte.</p>
   </section>
 
-  <section id="projectes">
-    <h2>Projectes Personals</h2>
-    <ul class="projects-list">
-      <li><strong>Modificació de videojocs:</strong> He modificat un joc de manera independent per millorar algunes mecàniques, motivat per la meva curiositat i ganes d’experimentar amb el desenvolupament de jocs.</li>
-      <li><strong>Gestió de servidor de jocs online:</strong> He creat i gestionat un servidor de jocs per als meus amics, aprenent tant aspectes tècnics (configuració del servidor, modificacions del joc i gestió de comandes) com creatius (organització d’esdeveniments i competicions, gestió d’interaccions amb jugadors, conflictes i feedback).</li>
+  <section id="experiencia">
+    <h2>Experiència Laboral</h2>
+    <div class="experience-timeline">
+      <article class="experience-item">
+        <div class="experience-header">
+          <img class="experience-logo" src="images/satb2c_logo.png" alt="SATB2C SL">
+          <div class="experience-heading">
+            <h3 class="experience-role">Programador júnior</h3>
+            <div class="experience-company">SATB2C SL</div>
+            <div class="experience-meta">Jornada parcial · setembre de 2025 - actualitat</div>
+            <div class="experience-meta">Girona · Híbrid</div>
+          </div>
+        </div>
+        <ul class="experience-description">
+          <li>Durant aquest període, vaig ampliar el meu rol des de la refactorització de sistemes heretats cap al lideratge d'iniciatives d'I+D, automatització de fluxos de treball i enginyeria de creixement. Vaig liderar la modernització arquitectònica de la plataforma central de SATB2C, materialitzada també en el meu TFG a la UdG, dissenyant solucions de software i màrqueting per a clients internacionals.</li>
+          <li>En modernització de software i enginyeria mòbil, vaig migrar l'app Android SAT des de jQuery cap a Framework7 i JavaScript pur, dissenyant una arquitectura offline-first amb SQLite per assegurar l'operativitat en mobilitat i la sincronització automàtica al núvol. També vaig dirigir la refactorització frontend del portal corporatiu SAT, eliminant dependències de Bootstrap i jQuery mitjançant CSS i JavaScript pur per optimitzar grids de dades.</li>
+          <li>Vaig treballar intensament amb Apache Cordova per compilar i mantenir múltiples aplicacions Android, vaig administrar bases de dades MySQL i vaig executar processos complexos d'importació de dades per al client principal.</li>
+          <li>En innovació amb IA i automatització, vaig integrar l'API de Google Gemini a l'app mòbil mitjançant una finestra de context dinàmic i un bucle interactiu de veu asíncron STT/TTS per a diagnòstics mans lliures. També vaig dissenyar automatitzacions backend amb n8n, connectant chatbots d'IA amb processos corporatius com la creació automàtica de serveis i la consulta de vacances en temps real.</li>
+          <li>Vaig redissenyar la solució mòbil tècnica en una nova aplicació adaptada per a equips comercials i fluxos de vendes B2B, a més d'auditar costos de tokens LLM per assegurar l'escalabilitat del producte.</li>
+        </ul>
+      </article>
+      <article class="experience-item">
+        <div class="experience-header">
+          <img class="experience-logo" src="images/satb2c_logo.png" alt="SATB2C SL">
+          <div class="experience-heading">
+            <h3 class="experience-role">Programador full stack</h3>
+            <div class="experience-company">SATB2C SL</div>
+            <div class="experience-meta">Contracte de pràctiques · juny de 2025 - agost de 2025</div>
+            <div class="experience-meta">Girona, Catalunya, Espanya · Presencial</div>
+          </div>
+        </div>
+        <ul class="experience-description">
+          <li>Durant els meus tres mesos de pràctiques, vaig treballar àmpliament amb bases de dades MySQL: creant i modificant taules, gestionant claus, optimitzant consultes i corregint errors de dades. Tant al frontend com al backend, vaig dissenyar i millorar formularis complets, integrant lògica condicional per optimitzar l'experiència d'usuari.</li>
+          <li>Vaig desenvolupar funcionalitats d'extrem a extrem en PHP, incloent-hi la connexió amb bases de dades i l'exportació a Excel, i també vaig participar en la gestió de rols i permisos d'usuari. A més, vaig mantenir contacte directe amb clients, interpretant les seves necessitats i proposant millores concretes.</li>
+          <li>Altres responsabilitats van incloure la creació de panells personalitzats, la generació de dades de prova, la preparació de funcionalitats per a producció i l'elaboració de documentació tècnica. Aquestes tasques em van ajudar a créixer tant tècnicament com personalment, reforçant la meva autonomia, la gestió del temps i el treball en equip en un entorn col·laboratiu.</li>
+          <li>En assolir amb èxit els objectius de les pràctiques, em vaig especialitzar en desenvolupament web i mòbil per a clients del sector serveis, participant també en iniciatives d'innovació, inclosa una introducció a tecnologies d'intel·ligència artificial.</li>
+        </ul>
+      </article>
+      <article class="experience-item">
+        <div class="experience-header">
+          <div class="experience-icon">EI</div>
+          <div class="experience-heading">
+            <h3 class="experience-role">Professor particular d'Enginyeria Informàtica</h3>
+            <div class="experience-company">Freelance | Self-Employed</div>
+            <div class="experience-meta">Professional independent · setembre de 2025 - juny de 2026</div>
+            <div class="experience-meta">Sant Celoni, Catalunya, Espanya · Presencial</div>
+          </div>
+        </div>
+        <ul class="experience-description">
+          <li>Vaig impartir mentoria acadèmica personalitzada i formació tècnica a un estudiant de 3r curs d'Enginyeria Informàtica de la Universitat de Girona (UdG).</li>
+          <li>En metodologia i enginyeria del software, vaig oferir mentoria avançada en Programació Orientada a Objectes, gestió de memòria amb punters, estructures de dades com piles i cues, recursivitat i disseny de diagrames tècnics de classes, activitat i seqüència.</li>
+          <li>En bases de dades, vaig treballar el disseny i modelatge relacional mitjançant diagrames Entitat-Relació i l'optimització de consultes SQL.</li>
+          <li>En arquitectura de computadors, vaig reforçar l'anàlisi del funcionament intern de processadors i el desenvolupament de codi de baix nivell en Assembler.</li>
+          <li>En xarxes i interfícies, vaig formar en protocols de comunicació com IP, TCP, HTTP i web, gestió d'infraestructura bàsica amb servidors i routers, i fonaments de multimèdia i interfícies d'usuari.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="formacio">
+    <h2>Educació</h2>
+    <div class="education-timeline">
+      <article class="education-item">
+        <div class="education-header">
+          <img class="education-logo" src="images/udg_logo.png" alt="Universitat de Girona">
+          <div class="education-heading">
+            <h3 class="education-title">Grau en Enginyeria Informàtica</h3>
+            <div class="education-center">Universitat de Girona</div>
+            <div class="education-meta">setembre de 2022 - juny de 2026</div>
+            <div class="education-meta">Girona, Catalunya, Espanya</div>
+          </div>
+        </div>
+        <ul class="education-description">
+          <li>Graduat en Enginyeria Informàtica amb una nota mitjana de 7.8/10.</li>
+          <li>Quatre Matrícules d'Honor: Paradigmes i Llenguatges de Programació, Informàtica Industrial i Robòtica, Habilitats Directives i de Comunicació, i Gestió de la Producció i Logística.</li>
+          <li>Qualificacions d'Excel·lent en Estades en Entorn Laboral, Sistemes de Gestió de Bases de Dades i Sistemes Digitals.</li>
+          <li>Treball de Final de Grau: vaig desenvolupar i desplegar una modernització arquitectònica integral per a la plataforma Android de SATB2C. Vaig migrar un sistema heretat en jQuery cap a Framework7 i JavaScript pur, vaig dissenyar una arquitectura offline-first amb SQLite per a tècnics de camp i vaig integrar l'API de Google Gemini per crear un bucle d'assistent de veu interactiu i mans lliures amb STT/TTS.</li>
+          <li>Aptituds reforçades: treball constant, organització, base tècnica i analítica sòlida, treball en equip i resolució de problemes.</li>
+        </ul>
+      </article>
+      <article class="education-item">
+        <div class="education-header">
+          <img class="education-logo" src="images/insti_logo.png" alt="Institut Baix Montseny">
+          <div class="education-heading">
+            <h3 class="education-title">Batxillerat, modalitat científico-tecnològica</h3>
+            <div class="education-center">Institut Baix Montseny</div>
+            <div class="education-meta">setembre de 2020 - maig de 2022</div>
+            <div class="education-meta">Sant Celoni, Catalunya, Espanya</div>
+          </div>
+        </div>
+        <ul class="education-description">
+          <li>Modalitat de Batxillerat Científico-Tecnològic, enfocada en el desenvolupament de bases analítiques, lògiques i de resolució de problemes.</li>
+          <li>Assignatures específiques: Matemàtiques, Física, Tecnologia i Dibuix Tècnic.</li>
+          <li>Projecte de Recerca: anàlisi exhaustiva sobre el rigor històric i la fidelitat de l'aclamada minisèrie "Band of Brothers" (Germans de Sang).</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="certificats">
+    <h2>Certificats</h2>
+    <ul class="certificates-list">
+      <li class="certificate-item">
+        <img class="certificate-logo" src="images/cambridge.webp" alt="Cambridge">
+        <div>
+          <div class="certificate-date">2020-06</div>
+          <div class="certificate-title">Certificat First d’Anglès</div>
+        </div>
+      </li>
+      <li class="certificate-item">
+        <img class="certificate-logo" src="images/dgt.png" alt="DGT">
+        <div>
+          <div class="certificate-date">2024-02</div>
+          <div class="certificate-title">Permís de conduir</div>
+        </div>
+      </li>
+      <li class="certificate-item">
+        <img class="certificate-logo" src="images/udemy.jpg" alt="Udemy">
+        <div>
+          <div class="certificate-date">2025-08</div>
+          <div class="certificate-title">Certificat de finalització del curs "Todo jQuery de novato a experto" (Udemy)</div>
+        </div>
+      </li>
     </ul>
-  </section>
-
-  <section id="rendiment">
-    <h2>Rendiment Acadèmic</h2>
-    <p>Sóc un estudiant de quart curs d’Enginyeria Informàtica amb una nota mitjana de 7,3. 
-      He demostrat solidesa acadèmica amb dues matrícules d’honor a les assignatures Paradigmes i Llenguatges de Programació
-       i Informàtica Industrial i Robòtica, i un excel·lent a Sistemes Digitals.</p>
-    <p>Com a projecte destacat, juntament amb dos companys, 
-      vam ser els únics a completar amb èxit una tasca pràctica amb un robot Staubli programat amb VAL3, 
-      demostrant capacitat de treball en equip, resolució de problemes i aplicació pràctica dels coneixements teòrics.</p>
-    <p>Em considero un estudiant amb fortes competències analítiques i tècniques, 
-      capaç de superar reptes i aportar valor als equips i empreses en què participo.</p>
   </section>
 
   <section id="habilitats">
       <h2>Habilitats</h2>
-
-      <h3>Competències personals</h3>
-      <ul class="skills-list">
-        <li>Capacitat d’aprenentatge: ★★★★★</li>
-        <li>Treball en equip: ★★★★★</li>
-        <li>Comunicació i contacte amb clients: ★★★★★</li>
-        <li>Intel·ligència emocional: ★★★★★</li>
-        <li>Diligència i compromís: ★★★★★</li>
-        <li>Resolució de problemes: ★★★★★</li>
-        <li>Teletreball: ★★★★★</li>
-        <li>Aportar noves solucions i idees: ★★★★★</li>
-      </ul>
-
-      <h3>Competències tècniques / Programació</h3>
-      <ul class="skills-list">
-        <li>Programació estructurada: ★★★★★</li>
-        <li>Java: ★★★★★</li>
-        <li>PHP: ★★★★★</li>
-        <li>Python: ★★★★☆</li>
-        <li>C / C++: ★★★★★</li>
-        <li>Haskell: ★★★★★</li>
-        <li>Prolog: ★★★★★</li>
-        <li>HTML / CSS: ★★★★☆</li>
-        <li>JavaScript: ★★★★☆</li>
-        <li>jQuery / jQuery UI / jQuery Mobile: ★★★★★</li>
-      </ul>
-
-      <h3>Bases de dades i documentació</h3>
-      <ul class="skills-list">
-        <li>Creació i gestió de models de dades: ★★★★★</li>
-        <li>MySQL: ★★★★★</li>
-        <li>Documentació de programes: ★★★★☆</li>
-      </ul>
+      <div class="skills-grid">
+        <article class="skill-block">
+          <h3>Desenvolupament full stack</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Integració amb bases de dades</span>
+            <span class="skill-tag">Exportació a Excel</span>
+            <span class="skill-tag">Formularis amb lògica condicional</span>
+            <span class="skill-tag">Portals web i aplicacions</span>
+          </div>
+        </article>
+        <article class="skill-block">
+          <h3>Desenvolupament mòbil i arquitectura</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Framework7</span>
+            <span class="skill-tag">Apache Cordova</span>
+            <span class="skill-tag">Android</span>
+            <span class="skill-tag">SQLite offline-first</span>
+            <span class="skill-tag">Sincronització al núvol</span>
+            <span class="skill-tag">Refactorització de sistemes heretats</span>
+            <span class="skill-tag">Arquitectura d'aplicacions</span>
+          </div>
+        </article>
+        <article class="skill-block">
+          <h3>IA i automatització</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Google Gemini API</span>
+            <span class="skill-tag">STT / TTS</span>
+            <span class="skill-tag">Assistents de veu</span>
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">Chatbots d'IA</span>
+            <span class="skill-tag">Automatització de processos</span>
+            <span class="skill-tag">Auditoria de costos LLM</span>
+          </div>
+        </article>
+        <article class="skill-block">
+          <h3>Dades i documentació</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Modelatge relacional</span>
+            <span class="skill-tag">Diagrames Entitat-Relació</span>
+            <span class="skill-tag">Optimització SQL</span>
+            <span class="skill-tag">Importació de dades</span>
+            <span class="skill-tag">Generació de dades de prova</span>
+            <span class="skill-tag">Documentació tècnica</span>
+          </div>
+        </article>
+        <article class="skill-block">
+          <h3>Enginyeria de software</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Programació Orientada a Objectes</span>
+            <span class="skill-tag">Estructures de dades</span>
+            <span class="skill-tag">Recursivitat</span>
+            <span class="skill-tag">Gestió de memòria</span>
+            <span class="skill-tag">Diagrames UML</span>
+            <span class="skill-tag">Codi net</span>
+            <span class="skill-tag">Resolució de problemes</span>
+          </div>
+        </article>
+        <article class="skill-block">
+          <h3>Competències professionals</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Contacte amb clients</span>
+            <span class="skill-tag">Comunicació tècnica</span>
+            <span class="skill-tag">Treball en equip</span>
+            <span class="skill-tag">Mentoria</span>
+            <span class="skill-tag">Autonomia</span>
+            <span class="skill-tag">Gestió del temps</span>
+            <span class="skill-tag">Orientació a resultats</span>
+          </div>
+        </article>
+      </div>
   </section>
-
 
   <section id="idiomes">
     <h2>Idiomes</h2>
@@ -203,33 +544,6 @@
       <li>Català: ★★★★★</li>
       <li>Espanyol: ★★★★★</li>
       <li>Anglès: ★★★★☆</li>
-    </ul>
-  </section>
-
-  <section id="experiencia">
-    <h2>Experiència Laboral</h2>
-    <p>Del 01/06/2025 al 31/07/2025 vaig fer pràctiques de Software Engineer a SATB2C.</p>
-    <p>Vaig treballar resolent petits problemes i conflictes que s'anaven trobant els diferents clients, solucionant problemes de codi i de gestió de bases de dades.</p>
-    <p>Tenia contacte directe amb clients per resoldre problemes, escoltar i valorar proposicions per afegir al programa, interpretar-les i implementar-les segons les necessitats del client.</p>
-    <p>Vaig desenvolupar pàgines web utilitzant plantilles de WordPress i PrestaShop, gestionar altes i baixes d'usuaris, fer consultes a la base de dades de manera més òptima i actualitzar codi PHP a versions més recents.</p>
-    <p>Vaig treballar amb HTML, JavaScript, CSS i PHP per crear portals web i aplicacions.</p>
-  </section>
-
-
-  <section id="formacio">
-    <h2>Educació</h2>
-    <ul class="education-list">
-      <li>2022-09 - actualitat - Enginyeria Informàtica (Universitat de Girona, Girona)</li>
-      <li>2020-09 - 2022-05 - Batxillerat Tecnològic (Institut Baix Montseny, Sant Celoni)</li>
-    </ul>
-  </section>
-
-  <section id="certificats">
-    <h2>Certificats</h2>
-    <ul class="certificates-list">
-      <li>2020-06 - Certificat First d’Anglès</li>
-      <li>2024-02 - Permís de conduir</li>
-      <li>2025-08 - Certificat de finalització del curs "Todo jQuery de novato a experto" (Udemy)</li>
     </ul>
   </section>
 
@@ -242,10 +556,29 @@
 
   <script src="jquery.min.js"></script>
   <script src="jquery-ui/jquery-ui.js"></script>
+  <script src="languages/data.js"></script>
 
   <script>
     $(document).ready(function() {
 		  $("#presentacio").show();
+
+      function tancarFoto() {
+        $("#photo-lightbox").removeClass("open").attr("aria-hidden", "true");
+      }
+
+      $("#profile-photo").click(function() {
+        $("#photo-lightbox").addClass("open").attr("aria-hidden", "false");
+      });
+
+      $("#photo-lightbox-close").click(tancarFoto);
+
+      $("#photo-lightbox").click(function(event) {
+        if (event.target === this) tancarFoto();
+      });
+
+      $(document).keydown(function(event) {
+        if (event.key === "Escape") tancarFoto();
+      });
 
 		  $("nav a").click(function() {
 			let sectionId = $(this).data("section");
@@ -254,14 +587,128 @@
 			});
 		  });
 		
-		function generarEstrelles(nivell) {
+    function generarEstrelles(nivell) {
       const plena = "★".repeat(nivell);
       const buida = "☆".repeat(5 - nivell);
       return plena + buida;
     }
 
+    function escaparHtml(text) {
+      return $("<div>").text(text).html();
+    }
+
+    function generarExperiencia(experiencia) {
+      if (!experiencia.length) return "";
+
+      if (typeof experiencia[0] === "string") {
+        return experiencia.map(paragraf => `<p>${escaparHtml(paragraf)}</p>`).join("");
+      }
+
+      let html = `<div class="experience-timeline">`;
+      experiencia.forEach(function(item) {
+        html += `<article class="experience-item">`;
+        html += `<div class="experience-header">`;
+        if (item.logo) {
+          html += `<img class="experience-logo" src="${escaparHtml(item.logo)}" alt="${escaparHtml(item.empresa)}">`;
+        } else if (item.icono) {
+          html += `<div class="experience-icon">${escaparHtml(item.icono)}</div>`;
+        }
+        html += `<div class="experience-heading">`;
+        html += `<h3 class="experience-role">${escaparHtml(item.cargo)}</h3>`;
+        html += `<div class="experience-company">${escaparHtml(item.empresa)}</div>`;
+        html += `<div class="experience-meta">${escaparHtml(item.tipo)} · ${escaparHtml(item.periodo)}</div>`;
+        html += `<div class="experience-meta">${escaparHtml(item.ubicacion)}</div>`;
+        html += `</div></div>`;
+        html += `<ul class="experience-description">`;
+        item.descripcion.forEach(function(punt) {
+          html += `<li>${escaparHtml(punt)}</li>`;
+        });
+        html += `</ul></article>`;
+      });
+      html += `</div>`;
+      return html;
+    }
+
+    function generarFormacio(formacio) {
+      if (!formacio.length) return "";
+
+      if (!Array.isArray(formacio[0].descripcio)) {
+        return `<ul class="education-list">` + formacio.map(function(item) {
+          return `<li>${escaparHtml(item.period)} - ${escaparHtml(item.titol)} (${escaparHtml(item.centre)})</li>`;
+        }).join("") + `</ul>`;
+      }
+
+      let html = `<div class="education-timeline">`;
+      formacio.forEach(function(item) {
+        html += `<article class="education-item">`;
+        html += `<div class="education-header">`;
+        if (item.logo) {
+          html += `<img class="education-logo" src="${escaparHtml(item.logo)}" alt="${escaparHtml(item.centre)}">`;
+        } else if (item.icono) {
+          html += `<div class="education-icon">${escaparHtml(item.icono)}</div>`;
+        }
+        html += `<div class="education-heading">`;
+        html += `<h3 class="education-title">${escaparHtml(item.titol)}</h3>`;
+        html += `<div class="education-center">${escaparHtml(item.centre)}</div>`;
+        html += `<div class="education-meta">${escaparHtml(item.period)}</div>`;
+        if (item.ubicacion) {
+          html += `<div class="education-meta">${escaparHtml(item.ubicacion)}</div>`;
+        }
+        html += `</div></div>`;
+        html += `<ul class="education-description">`;
+        item.descripcio.forEach(function(punt) {
+          html += `<li>${escaparHtml(punt)}</li>`;
+        });
+        html += `</ul></article>`;
+      });
+      html += `</div>`;
+      return html;
+    }
+
+    function generarHabilitats(habilitats) {
+      if (habilitats.blocs) {
+        let html = `<h2>${escaparHtml(habilitats.titol)}</h2><div class="skills-grid">`;
+        habilitats.blocs.forEach(function(bloc) {
+          html += `<article class="skill-block">`;
+          html += `<h3>${escaparHtml(bloc.titol)}</h3>`;
+          html += `<div class="skill-tags">`;
+          bloc.items.forEach(function(item) {
+            html += `<span class="skill-tag">${escaparHtml(item)}</span>`;
+          });
+          html += `</div></article>`;
+        });
+        html += `</div>`;
+        return html;
+      }
+
+      let html = `<h2>${escaparHtml(habilitats.titol)}</h2>`;
+      Object.values(habilitats).forEach(function(bloc) {
+        if (bloc.titol && bloc.items) {
+          html += `<h3>${escaparHtml(bloc.titol)}</h3><ul class="skills-list">`;
+          bloc.items.forEach(function(hab) {
+            html += `<li>${escaparHtml(hab.nom)}</li>`;
+          });
+          html += `</ul>`;
+        }
+      });
+      return html;
+    }
+
+    function carregarIdioma(idioma, callback) {
+      const dadesLocals = window.CV_LANGUAGES && window.CV_LANGUAGES[idioma];
+
+      if (window.location.protocol === "file:" && dadesLocals) {
+        callback(window.CV_LANGUAGES[idioma]);
+        return;
+      }
+
+      $.getJSON("languages/" + idioma + ".json", callback).fail(function() {
+        if (dadesLocals) callback(dadesLocals);
+      });
+    }
+
     function canviaIdioma(idioma) {
-      $.getJSON("languages/" + idioma + ".json", function(data) {
+      carregarIdioma(idioma, function(data) {
         $("header h1").text(data.header.nom);
         $("header p:eq(0)").text(data.header.titol);
         $("header p:eq(1)").html(
@@ -270,8 +717,6 @@
         );
 
         $("nav a[data-section='presentacio']").text(data.nav.presentacio);
-        $("nav a[data-section='projectes']").text(data.nav.projectes);
-        $("nav a[data-section='rendiment']").text(data.nav.rendiment);
         $("nav a[data-section='habilitats']").text(data.nav.habilitats);
         $("nav a[data-section='idiomes']").text(data.nav.idiomes);
         $("nav a[data-section='experiencia']").text(data.nav.experiencia);
@@ -280,8 +725,6 @@
         $("nav a[data-section='contacte']").text(data.nav.contacte);
 
         $("#presentacio h2").text(data.h2.presentacio);
-        $("#projectes h2").text(data.h2.projectes);
-        $("#rendiment h2").text(data.h2.rendiment);
         $("#habilitats h2").text(data.h2.habilitats);
         $("#idiomes h2").text(data.h2.idiomes);
         $("#experiencia h2").text(data.h2.experiencia);
@@ -294,30 +737,7 @@
           $("#presentacio").append(`<p>${paragraf}</p>`);
         });
 
-        let projectesHtml = "";
-        data.projectes.forEach(function(item){
-          projectesHtml += "<li>" + item.titol + ": " + item.descripcio + "</li>";
-        });
-        $("#projectes ul").html(projectesHtml);
-
-        $("#rendiment p").remove(); 
-        data.rendiment.forEach(paragraf => {
-          $("#rendiment").append(`<p>${paragraf}</p>`);
-        });
-
-        let htmlHabilitats = `<h2>${data.habilitats.titol}</h2>`;
-
-        Object.values(data.habilitats).forEach(function (bloc) {
-          if (bloc.titol && bloc.items) {
-            htmlHabilitats += `<h3>${bloc.titol}</h3><ul class="skills-list">`;
-            bloc.items.forEach(function (hab) {
-              htmlHabilitats += `<li>${hab.nom}: ${generarEstrelles(hab.nivell)}</li>`;
-            });
-            htmlHabilitats += `</ul>`;
-          }
-        });
-
-        $("#habilitats").html(htmlHabilitats);
+        $("#habilitats").html(generarHabilitats(data.habilitats));
 
         let idiomesHtml = "";
         data.idiomes.forEach(function(item){
@@ -325,20 +745,20 @@
         });
         $("#idiomes ul").html(idiomesHtml);
 
-        $("#experiencia p").remove(); 
-        data.experiencia.forEach(paragraf => {
-          $("#experiencia").append(`<p>${paragraf}</p>`);
-        });
+        $("#experiencia").html(`<h2>${data.h2.experiencia}</h2>${generarExperiencia(data.experiencia)}`);
 
-        let formacioHtml = "";
-        data.formacio.forEach(function(item){
-          formacioHtml += "<li>" + item.period + " - " + item.titol + " (" + item.centre + ")</li>";
-        });
-        $("#formacio ul").html(formacioHtml);
+        $("#formacio").html(`<h2>${data.h2.formacio}</h2>${generarFormacio(data.formacio)}`);
 
         let certificatsHtml = "";
         data.certificats.forEach(function(item){
-          certificatsHtml += "<li>" + item.data + " - " + item.titol + "</li>";
+          certificatsHtml += `<li class="certificate-item">`;
+          if (item.logo) {
+            certificatsHtml += `<img class="certificate-logo" src="${escaparHtml(item.logo)}" alt="${escaparHtml(item.titol)}">`;
+          }
+          certificatsHtml += `<div>`;
+          certificatsHtml += `<div class="certificate-date">${escaparHtml(item.data)}</div>`;
+          certificatsHtml += `<div class="certificate-title">${escaparHtml(item.titol)}</div>`;
+          certificatsHtml += `</div></li>`;
         });
         $("#certificats ul").html(certificatsHtml);
 

@@ -1,109 +1,216 @@
 {
   "header": {
     "nom": "Jordi Bolance Navarro",
-    "titol": "Estudiant d'Enginyeria Informàtica",
-    "subtitol": "Amb ganes de fer els meus primers passos a la indústria"
+    "titol": "Desenvolupador de Software a SATB2C | Enginyer Informàtic",
+    "subtitol": "Desenvolupador de Software a SATB2C"
   },
   "nav": {
     "presentacio": "Presentació",
-    "projectes": "Projectes",
-    "rendiment": "Rendiment Acadèmic",
-    "habilitats": "Habilitats",
-    "idiomes": "Idiomes",
     "experiencia": "Experiència Laboral",
     "formacio": "Educació",
     "certificats": "Certificats",
+    "habilitats": "Habilitats",
+    "idiomes": "Idiomes",
     "contacte": "Contacte"
   },
   "h2": {
     "presentacio": "Sobre mi",
-    "projectes": "Projectes Personals",
-    "rendiment": "Rendiment Acadèmic",
-    "habilitats": "Habilitats",
-    "idiomes": "Idiomes",
     "experiencia": "Experiència Laboral",
     "formacio": "Educació",
     "certificats": "Certificats",
+    "habilitats": "Habilitats",
+    "idiomes": "Idiomes",
     "contacte": "Contacte"
   },
   "presentacio": [
-  "Sóc estudiant de quart curs d’Enginyeria Informàtica i ja he fet els primers passos dins la indústria, amb dos mesos de pràctiques en una empresa tecnològica. Allà vaig tenir l’oportunitat de parlar directament amb clients, entendre les seves necessitats i transformar-les en propostes concretes d’implementació.",
-  "M’agrada aportar idees tant per a la millora de programes existents com per iniciar nous projectes des de zero, amb una actitud proactiva i orientada a resultats. Em considero una persona oberta i col·laborativa, amb ganes d’aprendre constantment i de contribuir al creixement dels equips i de les empreses en què participo."
-  ],
-  "projectes": [
-    {
-      "titol": "Contribució a la modificació de jocs",
-      "descripcio": "He modificat de manera independent un joc per millorar algunes mecàniques, impulsat per la curiositat i el desig d'experimentar amb el desenvolupament de jocs."
-    },
-    {
-      "titol": "Gestió de servidor de jocs online",
-      "descripcio": "He creat i gestionat un servidor de jocs online per als meus amics, aprenent aspectes tècnics com la configuració del servidor i les modificacions del joc, així com aspectes creatius com l'organització d'esdeveniments i la gestió d'interaccions i conflictes entre jugadors."
-    }
-  ],
-  "rendiment": [
-    "Sóc un estudiant de quart curs d’Enginyeria Informàtica amb una nota mitjana de 7,3. He demostrat solidesa acadèmica amb dues matrícules d’honor a les assignatures Paradigmes i Llenguatges de Programació i Informàtica Industrial i Robòtica, i un excel·lent a Sistemes Digitals.",
-    "Com a projecte destacat, juntament amb dos companys, vam ser els únics a completar amb èxit una tasca pràctica amb un robot Staubli programat amb VAL3, demostrant capacitat de treball en equip, resolució de problemes i aplicació pràctica dels coneixements teòrics.",
-    "Em considero un estudiant amb fortes competències analítiques i tècniques, capaç de superar reptes i aportar valor als equips i empreses en què participo."
+    "Enginyer Informàtic amb una base sòlida en desenvolupament de software i un any d’experiència professional com a Desenvolupador Full Stack.",
+    "Tinc experiència contrastada treballant tant en el frontend com en el backend d’aplicacions web, aportant solucions fiables i eficients.",
+    "Em considero una persona curiosa, proactiva i orientada a resultats, amb moltes ganes de continuar aprenent i creixent en l’àmbit de l’enginyeria de software i les tecnologies de la informació. M’apassiona el codi net, el treball en equip i afrontar nous reptes que em permetin aplicar els meus coneixements i adquirir noves habilitats.",
+    "El meu objectiu és continuar impulsant la meva carrera en el sector tecnològic, aportant valor en projectes innovadors i de gran impacte."
   ],
   "habilitats": {
     "titol": "Habilitats",
-    "competencies_personals": {
-      "titol": "Competències personals",
-      "items": [
-        { "nom": "Capacitat d’aprenentatge", "nivell": 5 },
-        { "nom": "Treball en equip", "nivell": 5 },
-        { "nom": "Comunicació i contacte amb clients", "nivell": 5 },
-        { "nom": "Intel·ligència emocional", "nivell": 5 },
-        { "nom": "Diligència i compromís", "nivell": 5 },
-        { "nom": "Resolució de problemes", "nivell": 5 },
-        { "nom": "Teletreball", "nivell": 5 },
-        { "nom": "Aportar noves solucions i idees", "nivell": 5 }
-      ]
-    },
-    "competencies_tecniques": {
-      "titol": "Competències tècniques / Programació",
-      "items": [
-        { "nom": "Programació estructurada", "nivell": 5 },
-        { "nom": "Java", "nivell": 5 },
-        { "nom": "PHP", "nivell": 5 },
-        { "nom": "Python", "nivell": 4 },
-        { "nom": "C / C++", "nivell": 5 },
-        { "nom": "Haskell", "nivell": 5 },
-        { "nom": "Prolog", "nivell": 5 },
-        { "nom": "HTML / CSS", "nivell": 4 },
-        { "nom": "JavaScript", "nivell": 4 },
-        { "nom": "jQuery / jQuery UI / jQuery Mobile", "nivell": 5 }
-      ]
-    },
-    "bases_dades_doc": {
-      "titol": "Bases de dades i documentació",
-      "items": [
-        { "nom": "Creació i gestió de models de dades", "nivell": 5 },
-        { "nom": "MySQL", "nivell": 5 },
-        { "nom": "Documentació de programes", "nivell": 4 }
-      ]
-    }
+    "blocs": [
+      {
+        "titol": "Desenvolupament full stack",
+        "items": [
+          "PHP",
+          "JavaScript",
+          "HTML / CSS",
+          "MySQL",
+          "Integració amb bases de dades",
+          "Exportació a Excel",
+          "Formularis amb lògica condicional",
+          "Portals web i aplicacions"
+        ]
+      },
+      {
+        "titol": "Desenvolupament mòbil i arquitectura",
+        "items": [
+          "Framework7",
+          "Apache Cordova",
+          "Android",
+          "SQLite offline-first",
+          "Sincronització al núvol",
+          "Refactorització de sistemes heretats",
+          "Arquitectura d'aplicacions"
+        ]
+      },
+      {
+        "titol": "IA i automatització",
+        "items": [
+          "Google Gemini API",
+          "STT / TTS",
+          "Assistents de veu",
+          "n8n",
+          "Chatbots d'IA",
+          "Automatització de processos",
+          "Auditoria de costos LLM"
+        ]
+      },
+      {
+        "titol": "Dades i documentació",
+        "items": [
+          "Modelatge relacional",
+          "Diagrames Entitat-Relació",
+          "Optimització SQL",
+          "Importació de dades",
+          "Generació de dades de prova",
+          "Documentació tècnica"
+        ]
+      },
+      {
+        "titol": "Enginyeria de software",
+        "items": [
+          "Programació Orientada a Objectes",
+          "Estructures de dades",
+          "Recursivitat",
+          "Gestió de memòria",
+          "Diagrames UML",
+          "Codi net",
+          "Resolució de problemes"
+        ]
+      },
+      {
+        "titol": "Competències professionals",
+        "items": [
+          "Contacte amb clients",
+          "Comunicació tècnica",
+          "Treball en equip",
+          "Mentoria",
+          "Autonomia",
+          "Gestió del temps",
+          "Orientació a resultats"
+        ]
+      }
+    ]
   },
   "idiomes": [
-    {"nom": "Català", "nivell": 5},
-    {"nom": "Espanyol", "nivell": 5},
-    {"nom": "Anglès", "nivell": 4}
+    {
+      "nom": "Català",
+      "nivell": 5
+    },
+    {
+      "nom": "Espanyol",
+      "nivell": 5
+    },
+    {
+      "nom": "Anglès",
+      "nivell": 4
+    }
   ],
   "experiencia": [
-      "Del 01/06/2025 al 31/07/2025 vaig fer pràctiques de Software Engineer a SATB2C.",
-      "Vaig treballar resolent petits problemes i conflictes que s'anaven trobant els diferents clients, solucionant problemes de codi i de gestió de bases de dades.",
-      "Tenia contacte directe amb clients per resoldre problemes, escoltar i valorar proposicions per afegir al programa, interpretar-les i implementar-les segons les necessitats del client.",
-      "Vaig desenvolupar pàgines web utilitzant plantilles de WordPress i PrestaShop, gestionar altes i baixes d'usuaris, fer consultes a la base de dades de manera més òptima i actualitzar codi PHP a versions més recents.",
-      "Vaig treballar amb HTML, JavaScript, CSS i PHP per crear portals web i aplicacions."
+    {
+      "cargo": "Programador júnior",
+      "empresa": "SATB2C SL",
+      "logo": "images/satb2c_logo.png",
+      "tipo": "Jornada parcial",
+      "periodo": "setembre de 2025 - actualitat",
+      "ubicacion": "Girona · Híbrid",
+      "descripcion": [
+        "Durant aquest període, vaig ampliar el meu rol des de la refactorització de sistemes heretats cap al lideratge d'iniciatives d'I+D, automatització de fluxos de treball i enginyeria de creixement. Vaig liderar la modernització arquitectònica de la plataforma central de SATB2C, materialitzada també en el meu TFG a la UdG, dissenyant solucions de software i màrqueting per a clients internacionals.",
+        "En modernització de software i enginyeria mòbil, vaig migrar l'app Android SAT des de jQuery cap a Framework7 i JavaScript pur, dissenyant una arquitectura offline-first amb SQLite per assegurar l'operativitat en mobilitat i la sincronització automàtica al núvol. També vaig dirigir la refactorització frontend del portal corporatiu SAT, eliminant dependències de Bootstrap i jQuery mitjançant CSS i JavaScript pur per optimitzar grids de dades.",
+        "Vaig treballar intensament amb Apache Cordova per compilar i mantenir múltiples aplicacions Android, vaig administrar bases de dades MySQL i vaig executar processos complexos d'importació de dades per al client principal.",
+        "En innovació amb IA i automatització, vaig integrar l'API de Google Gemini a l'app mòbil mitjançant una finestra de context dinàmic i un bucle interactiu de veu asíncron STT/TTS per a diagnòstics mans lliures. També vaig dissenyar automatitzacions backend amb n8n, connectant chatbots d'IA amb processos corporatius com la creació automàtica de serveis i la consulta de vacances en temps real.",
+        "Vaig redissenyar la solució mòbil tècnica en una nova aplicació adaptada per a equips comercials i fluxos de vendes B2B, a més d'auditar costos de tokens LLM per assegurar l'escalabilitat del producte."
+      ]
+    },
+    {
+      "cargo": "Programador full stack",
+      "empresa": "SATB2C SL",
+      "logo": "images/satb2c_logo.png",
+      "tipo": "Contracte de pràctiques",
+      "periodo": "juny de 2025 - agost de 2025",
+      "ubicacion": "Girona, Catalunya, Espanya · Presencial",
+      "descripcion": [
+        "Durant els meus tres mesos de pràctiques, vaig treballar àmpliament amb bases de dades MySQL: creant i modificant taules, gestionant claus, optimitzant consultes i corregint errors de dades. Tant al frontend com al backend, vaig dissenyar i millorar formularis complets, integrant lògica condicional per optimitzar l'experiència d'usuari.",
+        "Vaig desenvolupar funcionalitats d'extrem a extrem en PHP, incloent-hi la connexió amb bases de dades i l'exportació a Excel, i també vaig participar en la gestió de rols i permisos d'usuari. A més, vaig mantenir contacte directe amb clients, interpretant les seves necessitats i proposant millores concretes.",
+        "Altres responsabilitats van incloure la creació de panells personalitzats, la generació de dades de prova, la preparació de funcionalitats per a producció i l'elaboració de documentació tècnica. Aquestes tasques em van ajudar a créixer tant tècnicament com personalment, reforçant la meva autonomia, la gestió del temps i el treball en equip en un entorn col·laboratiu.",
+        "En assolir amb èxit els objectius de les pràctiques, em vaig especialitzar en desenvolupament web i mòbil per a clients del sector serveis, participant també en iniciatives d'innovació, inclosa una introducció a tecnologies d'intel·ligència artificial."
+      ]
+    },
+    {
+      "cargo": "Professor particular d'Enginyeria Informàtica",
+      "empresa": "Freelance | Self-Employed",
+      "icono": "EI",
+      "tipo": "Professional independent",
+      "periodo": "setembre de 2025 - juny de 2026",
+      "ubicacion": "Sant Celoni, Catalunya, Espanya · Presencial",
+      "descripcion": [
+        "Vaig impartir mentoria acadèmica personalitzada i formació tècnica a un estudiant de 3r curs d'Enginyeria Informàtica de la Universitat de Girona (UdG).",
+        "En metodologia i enginyeria del software, vaig oferir mentoria avançada en Programació Orientada a Objectes, gestió de memòria amb punters, estructures de dades com piles i cues, recursivitat i disseny de diagrames tècnics de classes, activitat i seqüència.",
+        "En bases de dades, vaig treballar el disseny i modelatge relacional mitjançant diagrames Entitat-Relació i l'optimització de consultes SQL.",
+        "En arquitectura de computadors, vaig reforçar l'anàlisi del funcionament intern de processadors i el desenvolupament de codi de baix nivell en Assembler.",
+        "En xarxes i interfícies, vaig formar en protocols de comunicació com IP, TCP, HTTP i web, gestió d'infraestructura bàsica amb servidors i routers, i fonaments de multimèdia i interfícies d'usuari."
+      ]
+    }
   ],
   "formacio": [
-    {"period": "2022-09 - actualitat", "titol": "Enginyeria Informàtica", "centre": "Universitat de Girona, Girona", "descripcio": "Actualment cursant el tercer any d'estudis"},
-    {"period": "2020-09 - 2022-05", "titol": "Batxillerat Tecnològic", "centre": "Institut Baix Montseny, Sant Celoni"}
+    {
+      "titol": "Grau en Enginyeria Informàtica",
+      "centre": "Universitat de Girona",
+      "logo": "images/udg_logo.png",
+      "icono": "UdG",
+      "period": "setembre de 2022 - juny de 2026",
+      "ubicacion": "Girona, Catalunya, Espanya",
+      "descripcio": [
+        "Graduat en Enginyeria Informàtica amb una nota mitjana de 7.8/10.",
+        "Quatre Matrícules d'Honor: Paradigmes i Llenguatges de Programació, Informàtica Industrial i Robòtica, Habilitats Directives i de Comunicació, i Gestió de la Producció i Logística.",
+        "Qualificacions d'Excel·lent en Estades en Entorn Laboral, Sistemes de Gestió de Bases de Dades i Sistemes Digitals.",
+        "Treball de Final de Grau: vaig desenvolupar i desplegar una modernització arquitectònica integral per a la plataforma Android de SATB2C. Vaig migrar un sistema heretat en jQuery cap a Framework7 i JavaScript pur, vaig dissenyar una arquitectura offline-first amb SQLite per a tècnics de camp i vaig integrar l'API de Google Gemini per crear un bucle d'assistent de veu interactiu i mans lliures amb STT/TTS.",
+        "Aptituds reforçades: treball constant, organització, base tècnica i analítica sòlida, treball en equip i resolució de problemes."
+      ]
+    },
+    {
+      "titol": "Batxillerat, modalitat científico-tecnològica",
+      "centre": "Institut Baix Montseny",
+      "logo": "images/insti_logo.png",
+      "icono": "BT",
+      "period": "setembre de 2020 - maig de 2022",
+      "ubicacion": "Sant Celoni, Catalunya, Espanya",
+      "descripcio": [
+        "Modalitat de Batxillerat Científico-Tecnològic, enfocada en el desenvolupament de bases analítiques, lògiques i de resolució de problemes.",
+        "Assignatures específiques: Matemàtiques, Física, Tecnologia i Dibuix Tècnic.",
+        "Projecte de Recerca: anàlisi exhaustiva sobre el rigor històric i la fidelitat de l'aclamada minisèrie \"Band of Brothers\" (Germans de Sang)."
+      ]
+    }
   ],
   "certificats": [
-    {"data": "2020-06", "titol": "Certificat First d’Anglès"},
-    {"data": "2024-02", "titol": "Permís de conduir"},
-    { "data": "2025-08", "titol": "Certificat de finalització del curs \"Todo jQuery de novato a experto\" (Udemy)" }
+    {
+      "data": "2020-06",
+      "titol": "Certificat First d’Anglès",
+      "logo": "images/cambridge.webp"
+    },
+    {
+      "data": "2024-02",
+      "titol": "Permís de conduir",
+      "logo": "images/dgt.png"
+    },
+    {
+      "data": "2025-08",
+      "titol": "Certificat de finalització del curs \"Todo jQuery de novato a experto\" (Udemy)",
+      "logo": "images/udemy.jpg"
+    }
   ],
   "contacte": {
     "email": "jordi.bolance3@gmail.com",
