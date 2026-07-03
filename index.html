@@ -41,10 +41,120 @@
     color: #ffcc00;
   }
 	.idiomes {
-	  position: absolute;
-	  top: 10px;
-	  right: 20px;
+	  display: flex;
+    align-items: center;
 	}
+  .view-switcher {
+    display: flex;
+    gap: 10px;
+    left: 20px;
+    position: absolute;
+    top: 10px;
+  }
+  .view-switcher button {
+    align-items: center;
+    background: rgba(255,255,255,0.92);
+    border: 2px solid rgba(255,255,255,0.75);
+    border-radius: 50%;
+    color: #005f99;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1.05rem;
+    font-weight: bold;
+    height: 35px;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+    transition: background 0.2s, transform 0.2s;
+    width: 35px;
+  }
+  .view-switcher button:hover {
+    transform: scale(1.12);
+  }
+  .view-switcher button.active {
+    background: #ffcc00;
+    color: #1f2933;
+  }
+  .view-icon {
+    display: block;
+    position: relative;
+  }
+  .view-icon-sections {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(2, 5px);
+  }
+  .view-icon-sections span {
+    background: currentColor;
+    border-radius: 50%;
+    display: block;
+    height: 5px;
+    width: 5px;
+  }
+  .view-icon-continuous {
+    height: 17px;
+    width: 17px;
+  }
+  .view-icon-continuous::before,
+  .view-icon-continuous::after,
+  .view-icon-continuous span {
+    background: currentColor;
+    border-radius: 999px;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 1px;
+    position: absolute;
+    width: 15px;
+  }
+  .view-icon-continuous::before {
+    top: 2px;
+  }
+  .view-icon-continuous span {
+    top: 7px;
+  }
+  .view-icon-continuous::after {
+    top: 12px;
+  }
+  .header-title-row {
+    align-items: center;
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 0.25rem;
+  }
+  .header-actions {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  .header-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 820px;
+  }
+  .download-pdf-button {
+    background: #d62828;
+    border: 2px solid #ffb3b3;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.88rem;
+    font-weight: bold;
+    padding: 0.45rem 0.8rem;
+    transition: background 0.2s, transform 0.2s;
+    white-space: nowrap;
+  }
+  .download-pdf-button:hover {
+    background: #b91c1c;
+    transform: translateY(-1px);
+  }
 	.idiomes img {
 	  width: 35px;         
 	  height: 35px;        
@@ -89,12 +199,43 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       display: none; 
     }
+    body.continuous-mode section {
+      display: block;
+      scroll-margin-top: 1rem;
+    }
     .skills-list, .languages-list, .certificates-list, .projects-list, .education-list {
       list-style: none;
       padding-left: 0;
     }
     .skills-list li, .languages-list li, .certificates-list li, .projects-list li, .education-list li {
       margin-bottom: 0.5rem;
+    }
+    .languages-list {
+      display: grid;
+      gap: 0.75rem;
+    }
+    .language-item {
+      align-items: center;
+      border: 1px solid #d8e6f3;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 0.9rem;
+    }
+    .language-name {
+      color: #1f2933;
+      font-weight: bold;
+    }
+    .language-level {
+      background: #eaf4fb;
+      border: 1px solid #c9dfef;
+      border-radius: 999px;
+      color: #005f99;
+      font-size: 0.92rem;
+      font-weight: bold;
+      padding: 0.25rem 0.65rem;
+      text-align: center;
     }
     .certificates-list {
       display: grid;
@@ -235,6 +376,10 @@
       margin-bottom: 0.7rem;
     }
     @media (max-width: 520px) {
+      .header-title-row {
+        flex-direction: column;
+        gap: 0.6rem;
+      }
       .experience-header, .education-header {
         gap: 0.65rem;
       }
@@ -291,24 +436,90 @@
       top: 1.5rem;
       width: 42px;
     }
+    @media print {
+      @page {
+        margin: 12mm;
+      }
+      body {
+        background: white;
+        color: #111;
+      }
+      header {
+        background: white;
+        color: #111;
+        padding: 0 0 1rem;
+      }
+      header a {
+        color: #111;
+      }
+      header img.foto {
+        border-color: #d8e6f3;
+        cursor: default;
+        height: 96px;
+        width: 96px;
+      }
+      .view-switcher,
+      .download-pdf-button,
+      .header-actions,
+      nav,
+      .photo-lightbox {
+        display: none !important;
+      }
+      section {
+        background: white;
+        border-radius: 0;
+        box-shadow: none;
+        display: block !important;
+        margin: 0 0 1rem;
+        max-width: none;
+        padding: 0;
+      }
+      h2 {
+        border-bottom: 1px solid #d8e6f3;
+        padding-bottom: 0.25rem;
+      }
+      .experience-item,
+      .education-item,
+      .skill-block,
+      .certificate-item,
+      .language-item {
+        break-inside: avoid;
+      }
+    }
   </style>
 </head>
 <body>
   
   <header>
-    <div class="idiomes">
-      <a href="#" title="English"><img src="images/uk.png" alt="English"></a>
-      <a href="#" title="Español"><img src="images/es.png" alt="Español"></a>
-      <a href="#" title="Català"><img src="images/cat.png" alt="Català" class="catala"></a>
+    <div class="view-switcher" aria-label="Mode de visualitzacio">
+      <button type="button" class="active" data-view="sections" title="Vista per seccions" aria-label="Vista per seccions">
+        <span class="view-icon view-icon-sections" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+      </button>
+      <button type="button" data-view="continuous" title="Vista en una sola pantalla" aria-label="Vista en una sola pantalla">
+        <span class="view-icon view-icon-continuous" aria-hidden="true"><span></span></span>
+      </button>
+    </div>
+
+    <div class="header-actions">
+      <div class="idiomes">
+        <a href="#" title="English"><img src="images/uk.png" alt="English"></a>
+        <a href="#" title="Español"><img src="images/es.png" alt="Español"></a>
+        <a href="#" title="Català"><img src="images/cat.png" alt="Català" class="catala"></a>
+      </div>
+      <button type="button" class="download-pdf-button" data-action="pdf" title="Descarregar PDF" aria-label="Descarregar PDF">Descarregar PDF</button>
     </div>
 	  
-    <img src="images/fotoid_2.jpg" alt="Foto de Jordi Bolance" class="foto" id="profile-photo" title="Ampliar foto">
-    <h1>Jordi Bolance Navarro</h1>
-    <p>Desenvolupador de Software a SATB2C | Enginyer Informàtic</p>
-    <p>
-      📧 <a href="mailto:jordi.bolance3@gmail.com">jordi.bolance3@gmail.com</a> |
-      📞 <a href="tel:+34644761615">+34 644 761 615</a>
-    </p>
+    <div class="header-main">
+      <img src="images/fotoid_2.jpg" alt="Foto de Jordi Bolance" class="foto" id="profile-photo" title="Ampliar foto">
+      <div class="header-title-row">
+        <h1>Jordi Bolance Navarro</h1>
+      </div>
+      <p>Desenvolupador de Software a SATB2C | Enginyer Informàtic</p>
+      <p>
+        📧 <a href="mailto:jordi.bolance3@gmail.com">jordi.bolance3@gmail.com</a> |
+        📞 <a href="tel:+34644761615">+34 644 761 615</a>
+      </p>
+    </div>
   </header>
 
   <div class="photo-lightbox" id="photo-lightbox" aria-hidden="true">
@@ -541,9 +752,9 @@
   <section id="idiomes">
     <h2>Idiomes</h2>
     <ul class="languages-list">
-      <li>Català: ★★★★★</li>
-      <li>Espanyol: ★★★★★</li>
-      <li>Anglès: ★★★★☆</li>
+      <li class="language-item"><span class="language-name">Català</span><span class="language-level">Natiu</span></li>
+      <li class="language-item"><span class="language-name">Espanyol</span><span class="language-level">Natiu</span></li>
+      <li class="language-item"><span class="language-name">Anglès</span><span class="language-level">B2 First (Cambridge English)</span></li>
     </ul>
   </section>
 
@@ -560,7 +771,68 @@
 
   <script>
     $(document).ready(function() {
+      let vistaActual = "sections";
+      let seccioActual = "presentacio";
+      let idiomaActual = "cat";
+      let vistaAbansPdf = null;
+      const titolOriginal = document.title;
 		  $("#presentacio").show();
+
+      function actualitzarBotonsVista() {
+        $(".view-switcher button").removeClass("active");
+        $(`.view-switcher button[data-view='${vistaActual}']`).addClass("active");
+      }
+
+      function aplicarVista(scrollActual) {
+        actualitzarBotonsVista();
+        $("body").toggleClass("continuous-mode", vistaActual === "continuous");
+
+        if (vistaActual === "continuous") {
+          $("section").show();
+          if (scrollActual && document.getElementById(seccioActual)) {
+            document.getElementById(seccioActual).scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+          return;
+        }
+
+        $("section").hide();
+        $("#" + seccioActual).show();
+      }
+
+      function anarASeccio(sectionId) {
+        seccioActual = sectionId;
+
+        if (vistaActual === "continuous") {
+          const seccio = document.getElementById(sectionId);
+          if (seccio) seccio.scrollIntoView({ behavior: "smooth", block: "start" });
+          return;
+        }
+
+        $("section:visible").hide("fade", 400, function() {
+          $("#" + sectionId).show("fade", 400);
+        });
+      }
+
+      function nomPdf() {
+        return `Jordi_Bolance_CV_${idiomaActual.toUpperCase()}`;
+      }
+
+      function restaurarDespresPdf() {
+        if (vistaAbansPdf === null) return;
+        vistaActual = vistaAbansPdf;
+        vistaAbansPdf = null;
+        document.title = titolOriginal;
+        $("body").removeClass("pdf-printing");
+        aplicarVista(false);
+      }
+
+      function descarregarPdf() {
+        vistaAbansPdf = vistaActual;
+        document.title = nomPdf();
+        $("body").addClass("pdf-printing continuous-mode");
+        $("section").show();
+        window.print();
+      }
 
       function tancarFoto() {
         $("#photo-lightbox").removeClass("open").attr("aria-hidden", "true");
@@ -581,11 +853,16 @@
       });
 
 		  $("nav a").click(function() {
-			let sectionId = $(this).data("section");
-			$("section:visible").hide("fade", 400, function() {
-			  $("#" + sectionId).show("fade", 400);
-			});
+        anarASeccio($(this).data("section"));
 		  });
+
+      $(".view-switcher button[data-view]").click(function() {
+        vistaActual = $(this).data("view");
+        aplicarVista(true);
+      });
+
+      $(".download-pdf-button").click(descarregarPdf);
+      $(window).on("afterprint", restaurarDespresPdf);
 		
     function generarEstrelles(nivell) {
       const plena = "★".repeat(nivell);
@@ -708,6 +985,7 @@
     }
 
     function canviaIdioma(idioma) {
+      idiomaActual = idioma;
       carregarIdioma(idioma, function(data) {
         $("header h1").text(data.header.nom);
         $("header p:eq(0)").text(data.header.titol);
@@ -723,6 +1001,19 @@
         $("nav a[data-section='formacio']").text(data.nav.formacio);
         $("nav a[data-section='certificats']").text(data.nav.certificats);
         $("nav a[data-section='contacte']").text(data.nav.contacte);
+        if (data.vista) {
+          $(".view-switcher").attr("aria-label", data.vista.etiqueta);
+          $(".view-switcher button[data-view='sections']")
+            .attr("title", data.vista.secciones)
+            .attr("aria-label", data.vista.secciones);
+          $(".view-switcher button[data-view='continuous']")
+            .attr("title", data.vista.continuo)
+            .attr("aria-label", data.vista.continuo);
+          $(".download-pdf-button")
+            .attr("title", data.vista.pdf)
+            .attr("aria-label", data.vista.pdf)
+            .text(data.vista.pdf);
+        }
 
         $("#presentacio h2").text(data.h2.presentacio);
         $("#habilitats h2").text(data.h2.habilitats);
@@ -741,7 +1032,8 @@
 
         let idiomesHtml = "";
         data.idiomes.forEach(function(item){
-          idiomesHtml += "<li>" + item.nom + ": " + generarEstrelles(item.nivell) + "</li>";
+          const nivell = item.detall || generarEstrelles(item.nivell);
+          idiomesHtml += `<li class="language-item"><span class="language-name">${escaparHtml(item.nom)}</span><span class="language-level">${escaparHtml(nivell)}</span></li>`;
         });
         $("#idiomes ul").html(idiomesHtml);
 
@@ -766,6 +1058,7 @@
         $("#contacte p:eq(1)").html(data.contacte.telefon_label + ": <a href='tel:" + data.contacte.telefon + "'>" + data.contacte.telefon + "</a>");
         $("#contacte p:eq(2)").html("LinkedIn: <a href='https://" + data.contacte.linkedin + "' target='_blank'>" + data.contacte.linkedin + "</a>");
 
+        aplicarVista(false);
       });
     }
 

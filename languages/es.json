@@ -108,15 +108,15 @@
   "idiomes": [
     {
       "nom": "Catalán",
-      "nivell": 5
+      "detall": "Nativo"
     },
     {
       "nom": "Español",
-      "nivell": 5
+      "detall": "Nativo"
     },
     {
       "nom": "Inglés",
-      "nivell": 4
+      "detall": "B2 First (Cambridge English)"
     }
   ],
   "experiencia": [
@@ -217,5 +217,11 @@
     "telefon": "+34 644 761 615",
     "linkedin": "linkedin.com/in/jordi-bolance-navarro-55b95936a",
     "telefon_label": "Teléfono"
+  },
+  "vista": {
+    "etiqueta": "Modo de visualizacion",
+    "secciones": "Vista por secciones",
+    "continuo": "Vista en una sola pantalla",
+    "pdf": "Descargar PDF"
   }
 }

@@ -109,15 +109,15 @@ window.CV_LANGUAGES = {
     "idiomes": [
       {
         "nom": "Catalán",
-        "nivell": 5
+        "detall": "Nativo"
       },
       {
         "nom": "Español",
-        "nivell": 5
+        "detall": "Nativo"
       },
       {
         "nom": "Inglés",
-        "nivell": 4
+        "detall": "B2 First (Cambridge English)"
       }
     ],
     "experiencia": [
@@ -218,6 +218,12 @@ window.CV_LANGUAGES = {
       "telefon": "+34 644 761 615",
       "linkedin": "linkedin.com/in/jordi-bolance-navarro-55b95936a",
       "telefon_label": "Teléfono"
+    },
+    "vista": {
+      "etiqueta": "Modo de visualizacion",
+      "secciones": "Vista por secciones",
+      "continuo": "Vista en una sola pantalla",
+      "pdf": "Descargar PDF"
     }
   },
   "en": {
@@ -330,15 +336,15 @@ window.CV_LANGUAGES = {
     "idiomes": [
       {
         "nom": "Catalan",
-        "nivell": 5
+        "detall": "Native"
       },
       {
         "nom": "Spanish",
-        "nivell": 5
+        "detall": "Native"
       },
       {
         "nom": "English",
-        "nivell": 4
+        "detall": "B2 First (Cambridge English)"
       }
     ],
     "experiencia": [
@@ -439,6 +445,12 @@ window.CV_LANGUAGES = {
       "telefon": "+34 644 761 615",
       "linkedin": "linkedin.com/in/jordi-bolance-navarro-55b95936a",
       "telefon_label": "Phone"
+    },
+    "vista": {
+      "etiqueta": "Display mode",
+      "secciones": "Section view",
+      "continuo": "Single-page view",
+      "pdf": "Download PDF"
     }
   },
   "cat": {
@@ -551,15 +563,15 @@ window.CV_LANGUAGES = {
     "idiomes": [
       {
         "nom": "Català",
-        "nivell": 5
+        "detall": "Natiu"
       },
       {
         "nom": "Espanyol",
-        "nivell": 5
+        "detall": "Natiu"
       },
       {
         "nom": "Anglès",
-        "nivell": 4
+        "detall": "B2 First (Cambridge English)"
       }
     ],
     "experiencia": [
@@ -660,6 +672,12 @@ window.CV_LANGUAGES = {
       "telefon": "+34 644 761 615",
       "linkedin": "linkedin.com/in/jordi-bolance-navarro-55b95936a",
       "telefon_label": "Telèfon"
+    },
+    "vista": {
+      "etiqueta": "Mode de visualitzacio",
+      "secciones": "Vista per seccions",
+      "continuo": "Vista en una sola pantalla",
+      "pdf": "Descarregar PDF"
     }
   }
 };
