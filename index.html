@@ -1000,9 +1000,10 @@
         return;
       }
 
-      $.getJSON("languages/" + idioma + ".json", callback).fail(function() {
-        if (dadesLocals) callback(dadesLocals);
-      });
+      $.ajax({ url: "languages/" + idioma + ".json", dataType: "json", cache: false })
+        .done(callback).fail(function() {
+          if (dadesLocals) callback(dadesLocals);
+        });
     }
 
     function canviaIdioma(idioma) {
