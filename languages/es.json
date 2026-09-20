@@ -116,7 +116,7 @@
     },
     {
       "nom": "Inglés",
-      "detall": "B2 First (Cambridge English)"
+      "detall": "C1 Advanced (Cambridge English)"
     }
   ],
   "experiencia": [
@@ -167,6 +167,15 @@
   ],
   "formacio": [
     {
+      "titol": "Máster Universitario en Ciencia de Datos",
+      "centre": "Universitat Oberta de Catalunya (UOC)",
+      "icono": "UOC",
+      "period": "septiembre de 2026 - junio de 2027",
+      "descripcio": [
+        "Especialización en análisis avanzado de datos, aprendizaje automático, arquitecturas de Big Data y toma de decisiones basada en datos."
+      ]
+    },
+    {
       "titol": "Grado en Ingeniería Informática",
       "centre": "Universitat de Girona",
       "logo": "images/udg_logo.png",
@@ -210,6 +219,12 @@
       "data": "2025-08",
       "titol": "Certificado de finalización del curso \"Todo jQuery de novato a experto\" (Udemy)",
       "logo": "images/udemy.jpg"
+    },
+    {
+      "data": "2026-09",
+      "titol": "Cambridge C1 Advanced (CAE)",
+      "emissor": "Cambridge University Press & Assessment (Cambridge English)",
+      "logo": "images/cambridge.webp"
     }
   ],
   "contacte": {

@@ -117,7 +117,7 @@ window.CV_LANGUAGES = {
       },
       {
         "nom": "Inglés",
-        "detall": "B2 First (Cambridge English)"
+        "detall": "C1 Advanced (Cambridge English)"
       }
     ],
     "experiencia": [
@@ -168,6 +168,15 @@ window.CV_LANGUAGES = {
     ],
     "formacio": [
       {
+        "titol": "Máster Universitario en Ciencia de Datos",
+        "centre": "Universitat Oberta de Catalunya (UOC)",
+        "icono": "UOC",
+        "period": "septiembre de 2026 - junio de 2027",
+        "descripcio": [
+          "Especialización en análisis avanzado de datos, aprendizaje automático, arquitecturas de Big Data y toma de decisiones basada en datos."
+        ]
+      },
+      {
         "titol": "Grado en Ingeniería Informática",
         "centre": "Universitat de Girona",
         "logo": "images/udg_logo.png",
@@ -211,6 +220,12 @@ window.CV_LANGUAGES = {
         "data": "2025-08",
         "titol": "Certificado de finalización del curso \"Todo jQuery de novato a experto\" (Udemy)",
         "logo": "images/udemy.jpg"
+      },
+      {
+        "data": "2026-09",
+        "titol": "Cambridge C1 Advanced (CAE)",
+        "emissor": "Cambridge University Press & Assessment (Cambridge English)",
+        "logo": "images/cambridge.webp"
       }
     ],
     "contacte": {
@@ -344,7 +359,7 @@ window.CV_LANGUAGES = {
       },
       {
         "nom": "English",
-        "detall": "B2 First (Cambridge English)"
+        "detall": "C1 Advanced (Cambridge English)"
       }
     ],
     "experiencia": [
@@ -395,6 +410,15 @@ window.CV_LANGUAGES = {
     ],
     "formacio": [
       {
+        "titol": "Master's Degree in Data Science",
+        "centre": "Universitat Oberta de Catalunya (UOC)",
+        "icono": "UOC",
+        "period": "September 2026 - June 2027",
+        "descripcio": [
+          "Specialization in advanced data analysis, machine learning, Big Data architectures, and data-driven decision making."
+        ]
+      },
+      {
         "titol": "Bachelor's Degree in Computer Engineering",
         "centre": "University of Girona",
         "logo": "images/udg_logo.png",
@@ -438,6 +462,12 @@ window.CV_LANGUAGES = {
         "data": "2025-08",
         "titol": "Certificate of completion of the course \"Todo jQuery de novato a experto\" (Udemy)",
         "logo": "images/udemy.jpg"
+      },
+      {
+        "data": "2026-09",
+        "titol": "Cambridge C1 Advanced (CAE)",
+        "emissor": "Cambridge University Press & Assessment (Cambridge English)",
+        "logo": "images/cambridge.webp"
       }
     ],
     "contacte": {
@@ -571,7 +601,7 @@ window.CV_LANGUAGES = {
       },
       {
         "nom": "Anglès",
-        "detall": "B2 First (Cambridge English)"
+        "detall": "C1 Advanced (Cambridge English)"
       }
     ],
     "experiencia": [
@@ -622,6 +652,15 @@ window.CV_LANGUAGES = {
     ],
     "formacio": [
       {
+        "titol": "Màster Universitari en Ciència de Dades",
+        "centre": "Universitat Oberta de Catalunya (UOC)",
+        "icono": "UOC",
+        "period": "setembre de 2026 - juny de 2027",
+        "descripcio": [
+          "Especialització en anàlisi avançada de dades, aprenentatge automàtic, arquitectures de Big Data i presa de decisions basada en dades."
+        ]
+      },
+      {
         "titol": "Grau en Enginyeria Informàtica",
         "centre": "Universitat de Girona",
         "logo": "images/udg_logo.png",
@@ -665,6 +704,12 @@ window.CV_LANGUAGES = {
         "data": "2025-08",
         "titol": "Certificat de finalització del curs \"Todo jQuery de novato a experto\" (Udemy)",
         "logo": "images/udemy.jpg"
+      },
+      {
+        "data": "2026-09",
+        "titol": "Cambridge C1 Advanced (CAE)",
+        "emissor": "Cambridge University Press & Assessment (Cambridge English)",
+        "logo": "images/cambridge.webp"
       }
     ],
     "contacte": {

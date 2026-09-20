@@ -1050,6 +1050,9 @@
           certificatsHtml += `<div>`;
           certificatsHtml += `<div class="certificate-date">${escaparHtml(item.data)}</div>`;
           certificatsHtml += `<div class="certificate-title">${escaparHtml(item.titol)}</div>`;
+          if (item.emissor) {
+            certificatsHtml += `<div class="certificate-issuer">${escaparHtml(item.emissor)}</div>`;
+          }
           certificatsHtml += `</div></li>`;
         });
         $("#certificats ul").html(certificatsHtml);

@@ -116,7 +116,7 @@
     },
     {
       "nom": "English",
-      "detall": "B2 First (Cambridge English)"
+      "detall": "C1 Advanced (Cambridge English)"
     }
   ],
   "experiencia": [
@@ -167,6 +167,15 @@
   ],
   "formacio": [
     {
+      "titol": "Master's Degree in Data Science",
+      "centre": "Universitat Oberta de Catalunya (UOC)",
+      "icono": "UOC",
+      "period": "September 2026 - June 2027",
+      "descripcio": [
+        "Specialization in advanced data analysis, machine learning, Big Data architectures, and data-driven decision making."
+      ]
+    },
+    {
       "titol": "Bachelor's Degree in Computer Engineering",
       "centre": "University of Girona",
       "logo": "images/udg_logo.png",
@@ -210,6 +219,12 @@
       "data": "2025-08",
       "titol": "Certificate of completion of the course \"Todo jQuery de novato a experto\" (Udemy)",
       "logo": "images/udemy.jpg"
+    },
+    {
+      "data": "2026-09",
+      "titol": "Cambridge C1 Advanced (CAE)",
+      "emissor": "Cambridge University Press & Assessment (Cambridge English)",
+      "logo": "images/cambridge.webp"
     }
   ],
   "contacte": {
