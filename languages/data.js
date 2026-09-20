@@ -207,14 +207,10 @@ window.CV_LANGUAGES = {
     ],
     "certificats": [
       {
-        "data": "2020-06",
-        "titol": "Certificado First de Inglés",
+        "data": "2026-09",
+        "titol": "Cambridge C1 Advanced (CAE)",
+        "emissor": "Cambridge University Press & Assessment (Cambridge English)",
         "logo": "images/cambridge.webp"
-      },
-      {
-        "data": "2024-02",
-        "titol": "Permiso de conducir",
-        "logo": "images/dgt.png"
       },
       {
         "data": "2025-08",
@@ -222,9 +218,13 @@ window.CV_LANGUAGES = {
         "logo": "images/udemy.jpg"
       },
       {
-        "data": "2026-09",
-        "titol": "Cambridge C1 Advanced (CAE)",
-        "emissor": "Cambridge University Press & Assessment (Cambridge English)",
+        "data": "2024-02",
+        "titol": "Permiso de conducir",
+        "logo": "images/dgt.png"
+      },
+      {
+        "data": "2020-06",
+        "titol": "Certificado First de Inglés",
         "logo": "images/cambridge.webp"
       }
     ],
@@ -449,14 +449,10 @@ window.CV_LANGUAGES = {
     ],
     "certificats": [
       {
-        "data": "2020-06",
-        "titol": "First Certificate in English",
+        "data": "2026-09",
+        "titol": "Cambridge C1 Advanced (CAE)",
+        "emissor": "Cambridge University Press & Assessment (Cambridge English)",
         "logo": "images/cambridge.webp"
-      },
-      {
-        "data": "2024-02",
-        "titol": "Driving License",
-        "logo": "images/dgt.png"
       },
       {
         "data": "2025-08",
@@ -464,9 +460,13 @@ window.CV_LANGUAGES = {
         "logo": "images/udemy.jpg"
       },
       {
-        "data": "2026-09",
-        "titol": "Cambridge C1 Advanced (CAE)",
-        "emissor": "Cambridge University Press & Assessment (Cambridge English)",
+        "data": "2024-02",
+        "titol": "Driving License",
+        "logo": "images/dgt.png"
+      },
+      {
+        "data": "2020-06",
+        "titol": "First Certificate in English",
         "logo": "images/cambridge.webp"
       }
     ],
@@ -691,14 +691,10 @@ window.CV_LANGUAGES = {
     ],
     "certificats": [
       {
-        "data": "2020-06",
-        "titol": "Certificat First d’Anglès",
+        "data": "2026-09",
+        "titol": "Cambridge C1 Advanced (CAE)",
+        "emissor": "Cambridge University Press & Assessment (Cambridge English)",
         "logo": "images/cambridge.webp"
-      },
-      {
-        "data": "2024-02",
-        "titol": "Permís de conduir",
-        "logo": "images/dgt.png"
       },
       {
         "data": "2025-08",
@@ -706,9 +702,13 @@ window.CV_LANGUAGES = {
         "logo": "images/udemy.jpg"
       },
       {
-        "data": "2026-09",
-        "titol": "Cambridge C1 Advanced (CAE)",
-        "emissor": "Cambridge University Press & Assessment (Cambridge English)",
+        "data": "2024-02",
+        "titol": "Permís de conduir",
+        "logo": "images/dgt.png"
+      },
+      {
+        "data": "2020-06",
+        "titol": "Certificat First d’Anglès",
         "logo": "images/cambridge.webp"
       }
     ],
