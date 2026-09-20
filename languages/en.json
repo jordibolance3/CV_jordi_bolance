@@ -169,7 +169,7 @@
     {
       "titol": "Master's Degree in Data Science",
       "centre": "Universitat Oberta de Catalunya (UOC)",
-      "icono": "UOC",
+      "logo": "images/logo_uoc.jpg",
       "period": "September 2026 - June 2027",
       "descripcio": [
         "Specialization in advanced data analysis, machine learning, Big Data architectures, and data-driven decision making."

@@ -170,7 +170,7 @@ window.CV_LANGUAGES = {
       {
         "titol": "Máster Universitario en Ciencia de Datos",
         "centre": "Universitat Oberta de Catalunya (UOC)",
-        "icono": "UOC",
+        "logo": "images/logo_uoc.jpg",
         "period": "septiembre de 2026 - junio de 2027",
         "descripcio": [
           "Especialización en análisis avanzado de datos, aprendizaje automático, arquitecturas de Big Data y toma de decisiones basada en datos."
@@ -412,7 +412,7 @@ window.CV_LANGUAGES = {
       {
         "titol": "Master's Degree in Data Science",
         "centre": "Universitat Oberta de Catalunya (UOC)",
-        "icono": "UOC",
+        "logo": "images/logo_uoc.jpg",
         "period": "September 2026 - June 2027",
         "descripcio": [
           "Specialization in advanced data analysis, machine learning, Big Data architectures, and data-driven decision making."
@@ -654,7 +654,7 @@ window.CV_LANGUAGES = {
       {
         "titol": "Màster Universitari en Ciència de Dades",
         "centre": "Universitat Oberta de Catalunya (UOC)",
-        "icono": "UOC",
+        "logo": "images/logo_uoc.jpg",
         "period": "setembre de 2026 - juny de 2027",
         "descripcio": [
           "Especialització en anàlisi avançada de dades, aprenentatge automàtic, arquitectures de Big Data i presa de decisions basada en dades."

@@ -169,7 +169,7 @@
     {
       "titol": "Máster Universitario en Ciencia de Datos",
       "centre": "Universitat Oberta de Catalunya (UOC)",
-      "icono": "UOC",
+      "logo": "images/logo_uoc.jpg",
       "period": "septiembre de 2026 - junio de 2027",
       "descripcio": [
         "Especialización en análisis avanzado de datos, aprendizaje automático, arquitecturas de Big Data y toma de decisiones basada en datos."
